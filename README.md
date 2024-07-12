@@ -12,19 +12,22 @@ O npm é um gerenciador de pacotes do Node, que permite baixar bibliotecas de te
 
 ## 📚 <a id="table-of-contents">Conteúdo</a>
 
-1. **[Intro](#01-introdução)**
+1. **[Intro](#01-introducao)**
 
 
 
-## 01. Introdução
+## 01. Introducao
 
 -  [Intro](https://github.com/cidaluna/react-js-master)
 
 Gerar uma nova aplicação via npx: "npx create-react-app <nome>"
 
-Instalando o Vite: "npm create vite@latest"
-Definir o nome do projeto
+Instalação com o Vite: "npm create vite@latest"
+
+Nome do projeto: hello-world-2
+
 Escolher: React e Javascript
+
 Entrar na pasta da nova aplicação e rodar "npm install" e "npm run dev"
 
 - Links:

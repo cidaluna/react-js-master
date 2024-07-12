@@ -7,6 +7,17 @@
   pointer-events: none;
 }
 
+h2{
+  color: red;
+}
+
+.teste{
+  color: purple;
+  font-size: 2rem;
+  background-color: gray;
+  padding: 10px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
