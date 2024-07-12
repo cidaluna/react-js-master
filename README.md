@@ -33,4 +33,14 @@ Entrar na pasta da nova aplicação e rodar "npm install" e "npm run dev"
 - Links:
 - [React] (https://react.dev/)
 
+## 02. Fundamentos do React
+
+JSX é o HTML do React. Onde declaramos as tags HTML que serão exibidas no navegador e ficam no return do componente.
+Algumas propriedades mudam no JSX como o class no HTML, no JSX deve ser utilizado className.
+
+Para fazer comentário no JSX { /* Comentários */ }
+
+Template expressions é o recurso que permite executar Javascript no JSX e também interpolar variáveis.
+Exemplo: { algumCódigoJS }
+
 
