@@ -12,13 +12,13 @@ O npm é um gerenciador de pacotes do Node, que permite baixar bibliotecas de te
 
 ## 📚 <a id="table-of-contents">Conteúdo</a>
 
-1. **[Intro](#1-introducao)**
+1. **[Introducao](#1-introducao)**
 2. **[Fundamentos do React](#2-fundamentos-do-react)**
-3. **[Avancando no React](#2-avancando-no-react)**
+3. **[Avancando no React](#3-avancando-no-react)**
 
 
 
-## 01. Introducao
+## 1. Introducao
 
 Gerar uma nova aplicação via npx: "npx create-react-app <nome>"
 
@@ -47,7 +47,11 @@ Para fazer comentário no JSX { /* Comentários */ }
 
 Template expressions é o recurso que permite executar Javascript no JSX e também interpolar variáveis.
 
-Exemplo: { algumCódigoJS }
+Exemplo:
+```javascript
+{ algumCódigoJS }
+```
+ 
 
 ### Desafio 2
 1. Crie um componente chamado Challenge;
@@ -66,3 +70,6 @@ Podemos utilizar os eventos como onClick para acessar uma função. As funções
 3. Coloque o título de seção 3;
 
 
+**[⬆ Back to Top](#table-of-contents)**
+
+---
