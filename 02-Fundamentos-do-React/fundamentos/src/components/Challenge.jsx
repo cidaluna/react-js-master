@@ -3,7 +3,7 @@ const Challenge = () => {
     const b = 5;
     const c = 1;
 
-    const soma = () => { 
+    const handleSum = () => { 
         console.log('Clicou no botão soma');
         console.log('A soma eh = ',a+c);
     }
@@ -12,7 +12,8 @@ const Challenge = () => {
         <>
         <h3>Valor de a = {a}</h3>
         <h3>Valor de b = {b}</h3>
-        <button onClick={soma}>Veja a soma</button>
+        <button onClick={handleSum}>Clique aqui para somar</button>
+        <p>Veja a soma no console!!</p>
         </>
     );
 };
