@@ -12,7 +12,8 @@ O npm é um gerenciador de pacotes do Node, que permite baixar bibliotecas de te
 
 ## 📚 <a id="table-of-contents">Conteúdo</a>
 
-1. **[Intro](#01-introducao)**
+01. **[Intro](#01-introducao)**
+02. **[Fundamentos do React](#02-fundamentos-do-react)**
 
 
 
@@ -41,6 +42,7 @@ Algumas propriedades mudam no JSX como o class no HTML, no JSX deve ser utilizad
 Para fazer comentário no JSX { /* Comentários */ }
 
 Template expressions é o recurso que permite executar Javascript no JSX e também interpolar variáveis.
+
 Exemplo: { algumCódigoJS }
 
 
