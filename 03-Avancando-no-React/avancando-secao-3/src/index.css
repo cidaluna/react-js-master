@@ -54,6 +54,20 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.teste-var{
+  background-color: burlywood;
+  padding: 15px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.teste-state{
+  background-color: aquamarine;
+  padding: 15px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

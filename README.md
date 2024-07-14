@@ -73,6 +73,13 @@ Podemos utilizar os eventos como onClick para acessar uma função. As funções
 3. Coloque o título de seção 3;
 
 
+Hooks são funções do React que permitem por exemplo guardar e alterar o estado de algum dado, o ciclo de vida, entre outros recursos, nos componentes funcionais. Todos os hooks começam com "use", por exemplo useState, e com o hook é possível re-renderizar o componente.
+
+Sintaxe do hook:
+```jsx
+const [elemento, setElemento] = useState(valorInicial)
+```
+
 **[⬆ Back to Top](#table-of-contents)**
 
 ---
