@@ -80,6 +80,57 @@ Sintaxe do hook:
 const [elemento, setElemento] = useState(valorInicial)
 ```
 
+### Renderizar lista no React:
+#### Utilizando método array.map()
+```jsx
+const myList = ['item1', 'item2', 'item3'];
+
+const myComponentList = myList.map((item, index) => (
+  <li key={index}>{item}</li>
+));
+
+return (
+  <ul>
+    {myComponentList}
+  </ul>
+);
+```
+
+#### Utilizando loop for
+```jsx
+const myList = ['item1', 'item2', 'item3'];
+
+const myComponentList = [];
+
+for (const item of myList) {
+  myComponentList.push(<li>{item}</li>);
+}
+
+return (
+  <ul>
+    {myComponentList}
+  </ul>
+);
+```
+
+### Utilizando método Array.forEach()
+```jsx
+const myList = ['item1', 'item2', 'item3'];
+
+const myComponentList = [];
+
+myList.forEach((item, index) => {
+  myComponentList.push(<li key={index}>{item}</li>);
+});
+
+return (
+  <ul>
+    {myComponentList}
+  </ul>
+);
+```
+
+
 **[⬆ Back to Top](#table-of-contents)**
 
 ---
