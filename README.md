@@ -81,10 +81,33 @@ const [elemento, setElemento] = useState(valorInicial)
 ```
 
 ### Renderizar lista no React:
+Evitar o Warning: "Each child in a list should have a unique 'key' prop." Para isso, utilize sempre um identificador único (índice único) como chave de cada elemento da lista. Geralmente o id único vem do BD.
+Para uma melhor performance utilize o método map() do primeiro exemplo.
+
 #### Utilizando método array.map()
 ```jsx
-const myList = ['item1', 'item2', 'item3'];
+const jokes = [
+  {id: 151, joke: "abc asd", rating: 4},
+  {id: 158, joke: "hrd asd", rating: 1},
+  {id: 155, joke: "lun asd", rating: 5},
+  {id: 156, joke: "lok asd", rating: 4},
+];
 
+return (
+  <ul>
+    {
+      jokes.map((joke) => (
+      <li key={joke.id}>
+        {joke.joke} - {joke.rating}.
+      </li>
+    ))
+    }
+  </ul>
+);
+```
+
+```jsx
+const myList = ['item1', 'item2', 'item3'];
 const myComponentList = myList.map((item, index) => (
   <li key={index}>{item}</li>
 ));
@@ -96,27 +119,9 @@ return (
 );
 ```
 
-#### Utilizando loop for
-```jsx
-const myList = ['item1', 'item2', 'item3'];
-
-const myComponentList = [];
-
-for (const item of myList) {
-  myComponentList.push(<li>{item}</li>);
-}
-
-return (
-  <ul>
-    {myComponentList}
-  </ul>
-);
-```
-
 ### Utilizando método Array.forEach()
 ```jsx
 const myList = ['item1', 'item2', 'item3'];
-
 const myComponentList = [];
 
 myList.forEach((item, index) => {
@@ -129,7 +134,6 @@ return (
   </ul>
 );
 ```
-
 
 **[⬆ Back to Top](#table-of-contents)**
 

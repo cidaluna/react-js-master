@@ -20,6 +20,13 @@ const ListRender = () => {
         <li key={item.id}>{item.name} - {item.brand}</li>
     ));
 
+    const jokes = [
+      {id: 151, joke: "abc asd", rating: 4},
+      {id: 158, joke: "hrd asd", rating: 1},
+      {id: 155, joke: "lun asd", rating: 5},
+      {id: 156, joke: "lok asd", rating: 4},
+    ];  
+
     const myList = ['item1', 'item2', 'item3'];
     const myComponentList = [];
     myList.forEach((item, index) => {
@@ -29,6 +36,7 @@ const ListRender = () => {
   return (
     <div>
       <ul>
+      <h2>List users:</h2>
         {/* Geralmente o id (identificador único) vem do banco de dados, no exemplo abaixo temos no console 
             o Warning "Each child in a list should have a unique "key" prop,
             pedindo para atribuir um índice único em cada elemento da lista 
@@ -38,6 +46,7 @@ const ListRender = () => {
         ))}
       </ul>
       <ul>
+      <h2>All users:</h2>
         {users.map((item) => (
           <li key={item.id}>
             {item.name}, tem {item.age} anos.
@@ -46,11 +55,35 @@ const ListRender = () => {
       </ul>
       <div>
         <ul>
+        <h2>All cars:</h2>
             {listCars}
         </ul>
       </div>
       <div>
         <ul>
+          <h2>All jokes:</h2>
+          {
+            jokes.map((joke) => (
+            <li key={joke.id}>
+              {joke.joke} - {joke.rating} stars.
+            </li>
+          ))
+          }
+        </ul>
+        <ul>
+          <h2>Just jokes + 3 stars:</h2>
+          {
+            jokes.filter(joke => joke.rating > 3).map((joke) => (
+            <li key={joke.id}>
+              {joke.joke} - {joke.rating} stars.
+            </li>
+          ))
+          }
+        </ul>
+      </div>
+      <div>
+        <ul>
+        <h2>All items:</h2>
             {myComponentList}
         </ul>
       </div>
