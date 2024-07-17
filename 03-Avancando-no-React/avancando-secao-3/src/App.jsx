@@ -1,5 +1,6 @@
 import CarDetails from '../../components/CarDetails'
 import ConditionalRender from '../../components/ConditionalRender'
+import Container from '../../components/Container'
 import Fragment from '../../components/Fragment'
 import ListRender from '../../components/ListRender'
 import ManageData from '../../components/ManageData'
@@ -61,6 +62,15 @@ function App() {
         <div>
           <h1>React Fragments:</h1>
           <Fragment propFrag="teste" />
+        </div>
+        <div>
+          <h1>Children:</h1>
+          <Container myValue="testando...">
+            <p>E este é o conteúdo do container!</p>
+          </Container>
+          <Container myValue="teste 2.">
+            <h4>Conteúdo do container!</h4>
+          </Container>
         </div>
       </div>
     </>

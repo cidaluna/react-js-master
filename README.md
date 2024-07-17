@@ -224,6 +224,7 @@ const CarDetails = ({brand, km, color}) => {
 ### React Fragments
 Possui a sintaxe de uma tag vazia <> </>. React fragment é utilizado quando desejamos envolver um conteúdo HTML no JSX, mas, sem precisar adicionar mais uma div ou envolver o conteúdo em um elemento (nó) extra no DOM.
 Ele irá ganhar o elemento pai que estiver mais externo, resultando numa estrutura mais limpa e eficiente.
+
 Exemplo:
 ```jsx
 function Post() {
@@ -237,7 +238,27 @@ function Post() {
 ```
 
 ### Children prop
+É um recurso utilizado quando um componente precisa ter JSX dentro dele. Porém, este JSX vem do componente pai. Então, o componente age como um container, abraçando estes elementos. Children é considerada uma prop do componente.
+Exemplo:
 
+App.jsx
+```jsx
+  <Container>
+    <p>E este é o conteúdo do container!</p>
+  </Container>
+```
+
+Container.jsx
+```jsx
+const Container = ({ children }) => {  {/* Lembrar de desestruturar children */ }
+  return (
+    <div>
+      <h2>Este é o título do container</h2>
+      {children}  {/* Aqui será renderizado o conteúdo */}
+    </div>
+  )
+}
+```
 
 
 
