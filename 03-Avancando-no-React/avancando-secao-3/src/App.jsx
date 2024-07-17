@@ -28,11 +28,21 @@ function App() {
         <ManageData />
         <ListRender />
         <ConditionalRender />
-        <h1>Trabalhando com props:</h1>
-        <ShowUserName name={userName} />  {/* Trabalhando com props */ }
-        <Profile avatarUrl={avatar} avatarAltText={alt} avatarUser={user} />   {/* Trabalhando com props */ }
-        <h1>Desestrutando:</h1>
-        <CarDetails brand="VW" km={100000} color="Azul" />
+        <div>
+          <h1>Trabalhando com props:</h1> {/* Trabalhando com props */ }
+          <ShowUserName name={userName} />  
+          <Profile avatarUrl={avatar} avatarAltText={alt} avatarUser={user} />
+        </div>
+        <div>
+          <h1>Desestrutando:</h1>  {/* Trabalhando com destructuring */ }
+          <CarDetails brand="VW" km={100000} color="Azul" newCar={false} />
+        </div>
+        <div>
+          <h1>Reaproveitando componente CarDetails:</h1> {/* Reaproveitando */}
+          <CarDetails brand="Ford" km={0} color="Vermelho" newCar={true} />
+          <CarDetails brand="Fiat" km={0} color="Branco" newCar={true} />
+          <CarDetails brand="Fiat" km={5000} color="Prata" newCar={false} />
+        </div>
       </div>
     </>
   )

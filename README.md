@@ -200,8 +200,28 @@ const Profile = (props) => {
 export default Profile;
 ```
 
-### Desctructuring
-O JS permite desestruturar as propriedades que chegam, com o recurso destructuring.
+### Destructuring
+A desestruturação permite desorganizar valores e propriedades de objetos em variáveis distintas. Ou seja, permite extrair do objeto apenas as dados que preciso.
+Observe no exemplo abaixo que não precisamos mais passar o props e recuperar props.brand, props.km, etc.
+
+```jsx
+const CarDetails = ({brand, km, color}) => {
+  return (
+    <div>
+      <h2>Detalhes do carro</h2>
+      <ul>
+        {/* O uso de destructuring facilita a escrita do código e mantemos o mesmo nome da propriedade, utilizando apenas as props necessárias para personalizar e renderizar os componentes */}
+        <li>Marca: {brand}</li>
+        <li>KM: {km}</li>
+        <li>Cor: {color}</li>
+      </ul>
+      <p>Meu carro é um {brand} {color}.</p>
+    </div>
+  )
+}
+```
+
+### Reutilização de componentes
 
 
 
