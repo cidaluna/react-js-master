@@ -200,6 +200,11 @@ const Profile = (props) => {
 export default Profile;
 ```
 
+### Desctructuring
+O JS permite desestruturar as propriedades que chegam, com o recurso destructuring.
+
+
+
 **[⬆ Back to Top](#table-of-contents)**
 
 ---

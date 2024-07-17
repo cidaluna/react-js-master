@@ -1,3 +1,4 @@
+import CarDetails from '../../components/CarDetails'
 import ConditionalRender from '../../components/ConditionalRender'
 import ListRender from '../../components/ListRender'
 import ManageData from '../../components/ManageData'
@@ -30,6 +31,8 @@ function App() {
         <h1>Trabalhando com props:</h1>
         <ShowUserName name={userName} />  {/* Trabalhando com props */ }
         <Profile avatarUrl={avatar} avatarAltText={alt} avatarUser={user} />   {/* Trabalhando com props */ }
+        <h1>Desestrutando:</h1>
+        <CarDetails brand="VW" km={100000} color="Azul" />
       </div>
     </>
   )
