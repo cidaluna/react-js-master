@@ -1,6 +1,7 @@
 import CarDetails from '../../components/CarDetails'
 import ConditionalRender from '../../components/ConditionalRender'
 import Container from '../../components/Container'
+import ExecuteFunction from '../../components/ExecuteFunction'
 import Fragment from '../../components/Fragment'
 import ListRender from '../../components/ListRender'
 import ManageData from '../../components/ManageData'
@@ -20,6 +21,10 @@ function App() {
     {id: 3, brand: "Renault", color:"Amarelo", newCar: false, km: 4545},
     {id: 4, brand: "VW", color:"Azul", newCar: true, km: 0},
   ];
+
+  function showMessage(){
+    console.log('Evento do componente pai!');
+  }
 
   return (
     <>
@@ -71,6 +76,10 @@ function App() {
           <Container myValue="teste 2.">
             <h4>Conteúdo do container!</h4>
           </Container>
+        </div>
+        <div>
+          <h1>Função como prop:</h1>
+          <ExecuteFunction myPropFunction={showMessage} />
         </div>
       </div>
     </>

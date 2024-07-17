@@ -260,6 +260,9 @@ const Container = ({ children }) => {  {/* Lembrar de desestruturar children */ 
 }
 ```
 
+### Funções em props
+As funções podem ser passadas para as props normalmente. Basta criar a função no componente pai e enviar como prop para o componente filho. No filho ela pode ser ativada por evento por exemplo.
+
 
 
 **[⬆ Back to Top](#table-of-contents)**
