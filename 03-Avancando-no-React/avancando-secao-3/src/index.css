@@ -68,6 +68,10 @@ button:focus-visible {
   margin-bottom: 15px;
 }
 
+.avatar{
+  border-radius: 50%;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

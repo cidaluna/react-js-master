@@ -1,10 +1,16 @@
 import ConditionalRender from '../../components/ConditionalRender'
 import ListRender from '../../components/ListRender'
 import ManageData from '../../components/ManageData'
+import Profile from '../../components/Profile'
+import ShowUserName from '../../components/ShowUserName'
 import './App.css'
 import City from './assets/city.jpg'
 
 function App() {
+  const userName = "Luna123";
+  const avatar = "https://i.imgur.com/1bX5QH6.jpg";
+  const alt = "Test image";
+  const user = "Lin";
 
   return (
     <>
@@ -21,6 +27,9 @@ function App() {
         <ManageData />
         <ListRender />
         <ConditionalRender />
+        <h1>Trabalhando com props:</h1>
+        <ShowUserName name={userName} />  {/* Trabalhando com props */ }
+        <Profile avatarUrl={avatar} avatarAltText={alt} avatarUser={user} />   {/* Trabalhando com props */ }
       </div>
     </>
   )

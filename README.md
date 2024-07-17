@@ -149,6 +149,57 @@ Exemplo implementando um contador que aumenta com base no estado anterior:
  );
 ```
 
+### Props
+As props são propriedades que permitem passar dados do componente pai para um componente filho (unidirecional).
+Exemplo:
+
+App.jsx
+```jsx
+  function App() {
+  const avatar = "https://i.imgur.com/1bX5QH6.jpg";
+  const alt = "Test image";
+  const user = "Lin";
+
+  return (
+    <div>
+      <h1>Trabalhando com props:</h1>
+      <Profile avatarUrl={avatar} avatarAltText={alt} avatarUser={user} /> 
+    </div> 
+  );
+};
+export default App
+```
+
+Profile.jsx
+```jsx
+const Avatar = (props) => {
+  const {imageU, altT} = props;
+
+  return (
+    <div>
+      <img src={imageU}
+          alt={altT} 
+          className="avatar"
+          width={100}
+          height={100}
+      />
+    </div>
+  );
+};
+
+const Profile = (props) => {
+  const {avatarUrl, avatarAltText, avatarUser} = props;
+
+  return(
+    <div className="profile">
+      <Avatar imageU={avatarUrl} altT={avatarAltText} />
+      <p>Username: {avatarUser}</p>
+    </div>
+  )
+}
+export default Profile;
+```
+
 **[⬆ Back to Top](#table-of-contents)**
 
 ---
