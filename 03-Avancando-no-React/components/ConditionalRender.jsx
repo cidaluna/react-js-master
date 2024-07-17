@@ -3,7 +3,7 @@ import { useState } from 'react';
 const ConditionalRender = () => {
 
     const [x] = useState(true);  // Inicializa com verdade
-    const [name, setName] = useState("Cidoca");
+    const [name, setName] = useState("Cici");
 
   return (
     <div>
