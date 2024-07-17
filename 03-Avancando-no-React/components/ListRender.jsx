@@ -3,11 +3,22 @@ import { useState } from 'react';
 const ListRender = () => {
     const [list] = useState(["Cida","Maria","Nataly"]);
 
-    const [users] = useState([
-        {id: 123, name:"Cida", age: 37},
-        {id: 154, name:"Joana", age: 27},
-        {id: 158, name:"Matheus", age: 17},
-    ])
+    const [users, setUsers] = useState([
+        {id: 1, name:"Cida", age: 37},
+        {id: 2, name:"Joana", age: 27},
+        {id: 3, name:"Matheus", age: 17},
+    ]);
+
+    // utilizando o previous state
+    const deleteRandom = () =>{
+      // recuperar um número de 0 a 3 (total de itens da lista) e arredonda para baixo
+      const randomNumber = Math.floor(Math.random() * 4);
+      // acessa os índices 0,1,2 da lista
+      // aplica o delete
+      setUsers((prevUsers) => {
+        return prevUsers.filter((user) => randomNumber !== user.id);
+      });
+    };
 
     const [cars] = useState([
         {id: 451, name:"C40", brand:"Volvo"},
@@ -32,6 +43,11 @@ const ListRender = () => {
     myList.forEach((item, index) => {
       myComponentList.push(<li key={index}>{item}</li>); // prefira o índice único que vem do BD
     });
+
+    const [count, setCount] = useState(0);
+    function handleIncrement() {
+      setCount(prevCount => prevCount + 1);
+    }
     
   return (
     <div>
@@ -53,6 +69,7 @@ const ListRender = () => {
           </li>
         ))}
       </ul>
+      <button onClick={deleteRandom}>Delete random user</button>
       <div>
         <ul>
         <h2>All cars:</h2>
@@ -86,6 +103,9 @@ const ListRender = () => {
         <h2>All items:</h2>
             {myComponentList}
         </ul>
+      </div>
+      <div>
+        <button onClick={handleIncrement}>Count: {count}</button>
       </div>
     </div>
   );

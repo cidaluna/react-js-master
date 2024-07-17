@@ -135,6 +135,20 @@ return (
 );
 ```
 
+### Previous state
+Exemplo implementando um contador que aumenta com base no estado anterior:
+```jsx
+  const [count, setCount] = useState(0);
+  function handleIncrement() {
+    setCount(prevCount => prevCount + 1);
+  }
+  return (
+    <div>
+      <button onClick={handleIncrement}>Count: {count}</button>
+    </div>
+ );
+```
+
 **[⬆ Back to Top](#table-of-contents)**
 
 ---

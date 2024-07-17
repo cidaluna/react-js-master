@@ -1,3 +1,4 @@
+import ConditionalRender from '../../components/ConditionalRender'
 import ListRender from '../../components/ListRender'
 import ManageData from '../../components/ManageData'
 import './App.css'
@@ -19,6 +20,7 @@ function App() {
         </div>
         <ManageData />
         <ListRender />
+        <ConditionalRender />
       </div>
     </>
   )
