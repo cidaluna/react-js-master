@@ -221,7 +221,23 @@ const CarDetails = ({brand, km, color}) => {
 }
 ```
 
-### Reutilização de componentes
+### React Fragments
+Possui a sintaxe de uma tag vazia <> </>. React fragment é utilizado quando desejamos envolver um conteúdo HTML no JSX, mas, sem precisar adicionar mais uma div ou envolver o conteúdo em um elemento (nó) extra no DOM.
+Ele irá ganhar o elemento pai que estiver mais externo, resultando numa estrutura mais limpa e eficiente.
+Exemplo:
+```jsx
+function Post() {
+  return (
+    <>
+      <PostTitle />
+      <PostBody />
+    </>
+  );
+}
+```
+
+### Children prop
+
 
 
 

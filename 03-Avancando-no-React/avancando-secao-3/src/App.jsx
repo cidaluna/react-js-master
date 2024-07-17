@@ -1,5 +1,6 @@
 import CarDetails from '../../components/CarDetails'
 import ConditionalRender from '../../components/ConditionalRender'
+import Fragment from '../../components/Fragment'
 import ListRender from '../../components/ListRender'
 import ManageData from '../../components/ManageData'
 import Profile from '../../components/Profile'
@@ -12,6 +13,12 @@ function App() {
   const avatar = "https://i.imgur.com/1bX5QH6.jpg";
   const alt = "Test image";
   const user = "Lin";
+  const cars = [
+    {id: 1, brand: "Ferrari", color:"Amarelo", newCar: true, km: 0},
+    {id: 2, brand: "Kia", color:"Branco", newCar: false, km: 74856},
+    {id: 3, brand: "Renault", color:"Amarelo", newCar: false, km: 4545},
+    {id: 4, brand: "VW", color:"Azul", newCar: true, km: 0},
+  ];
 
   return (
     <>
@@ -42,6 +49,18 @@ function App() {
           <CarDetails brand="Ford" km={0} color="Vermelho" newCar={true} />
           <CarDetails brand="Fiat" km={0} color="Branco" newCar={true} />
           <CarDetails brand="Fiat" km={5000} color="Prata" newCar={false} />
+        </div>
+        <div>
+          <h1>Loop em array de objetos:</h1> {/* Loop na lista de carros */}
+          {
+            cars.map((car) => (
+              <CarDetails key={car.id} brand={car.brand} color={car.color} km={car.km} newCar={car.newCar} />
+            ))
+          }
+        </div>
+        <div>
+          <h1>React Fragments:</h1>
+          <Fragment propFrag="teste" />
         </div>
       </div>
     </>
