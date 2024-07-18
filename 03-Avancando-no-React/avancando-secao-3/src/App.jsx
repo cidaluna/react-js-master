@@ -10,6 +10,9 @@ import Message from '../../components/Message'
 import MessageChange from '../../components/MessageChange'
 import Profile from '../../components/Profile'
 import ShowUserName from '../../components/ShowUserName'
+import TaskAdd from '../../components/TaskAdd'
+import TaskCount from '../../components/TaskCount'
+import TaskList from '../../components/TaskList'
 import './App.css'
 import City from './assets/city.jpg'
 
@@ -35,6 +38,11 @@ function App() {
   const handleMessage = (msg) => {
     setMessage(msg);
   }
+
+  const [tarefas, setTarefas] = useState([
+    "autocuidado", "devocional", "leitura livro do mês",
+    "exercício js", "caminhada", "passeio com o cachorro"
+  ]);
 
   return (
     <>
@@ -95,6 +103,10 @@ function App() {
           <h1>State Lift:</h1>
           <Message msg={message} />
           <MessageChange handleMessageProp={handleMessage} />
+          <h1>Another Lift State Up in React:</h1>
+          <TaskCount propTarefas={tarefas} />
+          <TaskList propTarefas={tarefas} />
+          <TaskAdd propAlteraTarefas={setTarefas} />
         </div>
       </div>
     </>
