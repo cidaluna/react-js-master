@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import CarDetails from '../../components/CarDetails'
 import ConditionalRender from '../../components/ConditionalRender'
 import Container from '../../components/Container'
@@ -5,10 +6,13 @@ import ExecuteFunction from '../../components/ExecuteFunction'
 import Fragment from '../../components/Fragment'
 import ListRender from '../../components/ListRender'
 import ManageData from '../../components/ManageData'
+import Message from '../../components/Message'
+import MessageChange from '../../components/MessageChange'
 import Profile from '../../components/Profile'
 import ShowUserName from '../../components/ShowUserName'
 import './App.css'
 import City from './assets/city.jpg'
+
 
 function App() {
   const userName = "Luna123";
@@ -24,6 +28,12 @@ function App() {
 
   function showMessage(){
     console.log('Evento do componente pai!');
+  }
+
+  const [message, setMessage] = useState('');
+
+  const handleMessage = (msg) => {
+    setMessage(msg);
   }
 
   return (
@@ -80,6 +90,11 @@ function App() {
         <div>
           <h1>Função como prop:</h1>
           <ExecuteFunction myPropFunction={showMessage} />
+        </div>
+        <div>
+          <h1>State Lift:</h1>
+          <Message msg={message} />
+          <MessageChange handleMessageProp={handleMessage} />
         </div>
       </div>
     </>
