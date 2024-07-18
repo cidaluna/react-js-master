@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import CarDetails from '../../components/CarDetails'
+import Challenge4UserDetails from '../../components/Challenge4UserDetails'
 import ConditionalRender from '../../components/ConditionalRender'
 import Container from '../../components/Container'
 import ExecuteFunction from '../../components/ExecuteFunction'
@@ -43,6 +44,13 @@ function App() {
     "autocuidado", "devocional", "leitura livro do mês",
     "exercício js", "caminhada", "passeio com o cachorro"
   ]);
+
+  const [people] = useState([
+    {id: 1, nome:"Luna", idade:37, profissao: "Programadora"},
+    {id: 2, nome:"Maria", idade:17, profissao: "Cozinheira"},
+    {id: 3, nome:"Elisama", idade:17, profissao: "Escritora"},
+    {id: 4, nome:"Sueli", idade:47, profissao: "Costureira"},
+  ])
 
   return (
     <>
@@ -107,6 +115,10 @@ function App() {
           <TaskCount propTarefas={tarefas} />
           <TaskList propTarefas={tarefas} />
           <TaskAdd propAlteraTarefas={setTarefas} />
+        </div>
+        <div>
+          <h1>Listar usuários:</h1>
+          <Challenge4UserDetails myList={people}/>
         </div>
       </div>
     </>

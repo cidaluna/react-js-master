@@ -7,7 +7,7 @@ O Node.js é uma runtime de Javascript, ou seja, uma biblioteca utilizada por um
 O npm é um gerenciador de pacotes do Node, que permite baixar bibliotecas de terceiros e executar scripts desenvolvidos na aplicação.
 
 <p align="center">
-  <img src="images/react-logo.svg" width="200">
+  <img src="images/react-logo-do-zero-a-maestria.svg" width="200">
 </p>
 
 ## 📚 <a id="table-of-contents">Conteúdo</a>
@@ -288,6 +288,12 @@ const ExecuteFunction = ({ myPropFunction }) => {
 
 ### State lift
 O state lift ou elevação do state, é quando um estado é movido para o componente pai, para que o estado seja manipulado ou compartilhado com todos os componentes filhos que desejam acessá-lo. Ou seja, quando os componentes filhos precisam compartilhar do mesmo estado, centralizado e propagado na aplicação.
+
+### Desafio 4
+1. Crie um array de objetos compostos de pessoas, com as propriedades de nome, idade e profissão (array com pelo menos 3 itens);
+2. Os dados devem ser exibidos em um componente UserDetails, que você deve criar, todas as informações devem ser exibidas;
+3. Faça uma renderização condicional que exibe se o usuário pode tirar carteira de habilitação ou não, imprima isso também no componente UserDetails;
+4. A informação pode ser exibida num parágrafo (checar se idade >= 18);
 
 
 
