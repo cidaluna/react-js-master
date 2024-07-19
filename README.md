@@ -15,20 +15,26 @@ O npm é um gerenciador de pacotes do Node, que permite baixar bibliotecas de te
 1. **[Introducao](#1-introducao)**
 2. **[Fundamentos do React](#2-fundamentos-do-react)**
 3. **[Avancando no React](#3-avancando-no-react)**
+4. **[CSS no React](#4-css-no-react)**
 
 
 
 ## 1. Introducao
 
-Gerar uma nova aplicação via npx: "npx create-react-app <nome>"
+Gerar uma nova aplicação via npx: "npx create-react-app nome-desejado"
 
 Instalação com o Vite: "npm create vite@latest"
 
-Nome do projeto: hello-world-2
+Nome do projeto: nome-desejado
 
 Escolher: React e Javascript
 
-Entrar na pasta da nova aplicação e rodar "npm install" e "npm run dev"
+Executar a nova aplicação:
+```node
+  cd nome-desejado
+  npm install
+  npm run dev
+```
 
 - Links:
 - [React] (https://react.dev/)
@@ -295,6 +301,25 @@ O state lift ou elevação do state, é quando um estado é movido para o compon
 3. Faça uma renderização condicional que exibe se o usuário pode tirar carteira de habilitação ou não, imprima isso também no componente UserDetails;
 4. A informação pode ser exibida num parágrafo (checar se idade >= 18);
 
+
+**[⬆ Back to Top](#table-of-contents)**
+
+---
+
+## 4. CSS no React
+
+O CSS de componente é utilizado para um componente em específico. Geralmente, é criado um arquivo com o mesmo nome do componente e importado no componente.
+Note que o CSS vaza para outros componentes se houver uma regra em colisão.
+O React já cria um exemplo com o App.jsx e App.css
+
+#### Inline Style
+O inline style do React é igual o do CSS. Por meio do atributo style, conseguimos aplicar regras diferentes em um elemento.
+Devemos optar por outras maneiras de CSS, o inline pode dificultar a manutenção ou deixar o código imprevisível em algumas situações.
+
+#### Inline Style Dinâmico
+O CSS inline dinâmico aplica estilo baseado em uma condicional.
+Vamos inserir no atributo um if ternário.
+Dependendo da condição podemos mudar que regras de estilo um elemento recebe.
 
 
 **[⬆ Back to Top](#table-of-contents)**
