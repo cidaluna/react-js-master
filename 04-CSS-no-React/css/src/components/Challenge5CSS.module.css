@@ -1,6 +1,23 @@
+ul{
+    display: flex;
+}
+
 .myCar{
-    background-color: aqua;
-    color: brown;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
     list-style: none;
+    background-color: blueviolet;
     text-decoration: none;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid purple;
+    border-radius: 10px;
+}
+
+.carDetails{
+    background-color: aqua;
+    color: purple;
+    padding: 10px;
+    border-radius: 10px;
 }

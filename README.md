@@ -339,3 +339,9 @@ Usamos a sintaxe Componente.module.css e precisamos importá-lo no componente.
 **[⬆ Back to Top](#table-of-contents)**
 
 ---
+
+## 5. Formularios no React
+Utilizamos a tag form para trabalhar com formularios no React. 
+As labels dos inputs contém o atributo htmlFor, que deve ter o valor do name do input.
+Não utilizamos action, pois o processamento será feito de forma assíncrona.
+
