@@ -16,6 +16,7 @@ O npm é um gerenciador de pacotes do Node, que permite baixar bibliotecas de te
 2. **[Fundamentos do React](#2-fundamentos-do-react)**
 3. **[Avancando no React](#3-avancando-no-react)**
 4. **[CSS no React](#4-css-no-react)**
+5. **[Formularios no React](#5-formularios-no-react)**
 
 
 
@@ -345,3 +346,17 @@ Utilizamos a tag form para trabalhar com formularios no React.
 As labels dos inputs contém o atributo htmlFor, que deve ter o valor do name do input.
 Não utilizamos action, pois o processamento será feito de forma assíncrona.
 
+### Label envolvendo o input
+Em React um padrão comum é a tag label envolvendo o input.
+Isso faz com que o atributo se torne opcional.
+Simplificando nossa estrutura de HTML, sem perder a semântica.
+
+#### Manipulação de valores
+Para manipular os valores dos inputs vamos utilizar o hook useState, ou seja, podemos armazenar na variável e utilizar o set para alterar o valor.
+Vamos criar uma função para alterar o valor no evento onChange. Deixando nosso código fácil de trabalhar nas próximas etapas: como envio dos dados para o BD e validação.
+
+
+
+**[⬆ Back to Top](#table-of-contents)**
+
+---
