@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './App.css';
+import Challenge5CSS from './components/Challenge5CSS';
 import MyComponent from './components/MyComponent';
+import Title from './components/Title';
 
 function App() {
   const n = 15;
@@ -22,6 +24,11 @@ function App() {
       <h2 style={nome === "Cida" ? ({color: "blue", backgroundColor: "gold"}) : null}>Teste nome com CSS Dinâmico</h2>
       {/* Classe CSS Dinâmica  */}
       <h2 className={redTitle ? "red-title": "beige-title"}>Este título vai ter classe CSS dinâmica</h2>
+      { /* CSS Modules - muito utilizado */ }
+      <Title />
+      { /* Challenge 5 List Cars */}
+      <h2 className='myListCars'>Challenge 5 CSS - Exibir detalhes dos carros:</h2>
+      <Challenge5CSS />
     </div>
   )
 }

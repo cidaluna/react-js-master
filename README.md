@@ -324,6 +324,17 @@ Dependendo da condição podemos mudar que regras de estilo um elemento recebe.
 #### Classes dinâmicas no CSS
 Podemos aplicar uma lógica para alterar a classe CSS de um elemento. Também através do if ternário. Esta abordagem é mais interessante do que o CSS inline, pois as classes estarão isoladas no arquivo CSS, resolvendo o problema de organização de código.
 
+#### CSS Modules
+É um recurso de CSS scoped, ou seja, é exclusivo do componente. 
+Usamos a sintaxe Componente.module.css e precisamos importá-lo no componente.
+
+### Desafio 5
+1. Crie um novo projeto chamado challengeCSS;
+2. No CSS global zere a margin, padding e coloque uma fonte que vc goste;
+3. Crie um componente que exibe detalhes de carros, este componente deve ser estilizado com scoped;
+4. Exiba pelo menos 3 carros;
+5. Coloque um título em App.jsx para o seu projeto, estilize o título com o App.css;
+
 
 **[⬆ Back to Top](#table-of-contents)**
 
