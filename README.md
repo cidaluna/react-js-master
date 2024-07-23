@@ -346,7 +346,7 @@ Utilizamos a tag form para trabalhar com formularios no React.
 As labels dos inputs contém o atributo htmlFor, que deve ter o valor do name do input.
 Não utilizamos action, pois o processamento será feito de forma assíncrona.
 
-### Label envolvendo o input
+#### Label envolvendo o input
 Em React um padrão comum é a tag label envolvendo o input.
 Isso faz com que o atributo se torne opcional.
 Simplificando nossa estrutura de HTML, sem perder a semântica.
@@ -358,6 +358,11 @@ Vamos criar uma função para alterar o valor no evento onChange. Deixando nosso
 #### Simplificando a manipulação
 Quando temos vários inputs podemos realizar a manipulação de forma mais simples. Basicamente criamos uma função inline no onChange.
 Ela vai alterar o valor do state com o método set, da mesma forma que a função isolada.
+
+#### Envio de formulário
+Para enviar um form vamos utilizar o evento onSubmit.
+Ele chamará uma função, e nesta devemos lembrar de parar a submissão com o preventDefault.
+Nesta etapa podemos realizar validações, envio de form para o servidor, reset de form e outras ações.
 
 
 **[⬆ Back to Top](#table-of-contents)**
