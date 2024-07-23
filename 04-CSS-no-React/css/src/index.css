@@ -9,3 +9,15 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
+.red-title{
+  color: red;
+  background-color: black;
+  padding: 15px;
+}
+
+.beige-title{
+  color: beige;
+  background-color: black;
+  padding: 15px;
+}
