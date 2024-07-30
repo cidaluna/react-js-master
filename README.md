@@ -364,6 +364,10 @@ Para enviar um form vamos utilizar o evento onSubmit.
 Ele chamará uma função, e nesta devemos lembrar de parar a submissão com o preventDefault.
 Nesta etapa podemos realizar validações, envio de form para o servidor, reset de form e outras ações.
 
+#### Controlled inputs
+Controlled inputs é um recurso que nos permite mais flexibilidade nos forms de React. Precisamos apenas igualar o valor (atributo value) ao state.
+Um uso muito comum: formulários de edição, que os dados vem do back-end, conseguiremos preencher o input mais facilmente.
+
 
 **[⬆ Back to Top](#table-of-contents)**
 
