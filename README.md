@@ -368,6 +368,16 @@ Nesta etapa podemos realizar validações, envio de form para o servidor, reset 
 Controlled inputs é um recurso que nos permite mais flexibilidade nos forms de React. Precisamos apenas igualar o valor (atributo value) ao state.
 Um uso muito comum: formulários de edição, que os dados vem do back-end, conseguiremos preencher o input mais facilmente.
 
+#### Limpando formulários
+Com o controller inputs limpar o form será fácil. Basta atribuir um valor de uma string vazia aos states e pronto!
+Isso será feito após o envio, em formulários que o usuário precisa preencher novamente.
+
+#### Input de Textarea
+O textarea pode ser considerado um input de texto normal. Utilizaremos o value para alterar o state inicial e o evento onChange para modificar o valor do state.
+
+#### Input de Select
+O select também será muito semelhante aos outros inputs. Quando temos a alteração de um valor o evento onChange pode captar isso. O value também pode atribuir qual option estará selecionada.
+
 
 **[⬆ Back to Top](#table-of-contents)**
 

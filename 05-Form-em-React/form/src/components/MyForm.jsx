@@ -6,6 +6,9 @@ const MyForm = ({ userProp }) => {
     const [name, setName] = useState(userProp ? userProp.name : "");
     const [email, setEmail] = useState(userProp ? userProp.email : "");
 
+    const [bio, setBio] = useState(userProp ? userProp.bio : "");
+    const [role, setRole] = useState(userProp ? userProp.role : "");
+
     const handleName = (e) => {
        setName(e.target.value);
     };
@@ -13,8 +16,13 @@ const MyForm = ({ userProp }) => {
     const handleSubmit = (e) => {
       e.preventDefault();  
       console.log('Enviando o formulário');
-      console.log(name);
-      console.log(email);
+      console.log(name, email, bio, role);
+      // após aplicar validações customizadas
+      // realizar o envio
+      // 7 - etapa de limpar formulário (reset)
+      setName("");
+      setEmail("");
+      setBio("");
     };
 
     // console.log(name);
@@ -41,6 +49,21 @@ const MyForm = ({ userProp }) => {
             onChange={(e)=> setEmail(e.target.value)}
             value={email}
             />
+        </label>
+        {/* 8 - Textarea */}
+        <label>
+          <span>Bio: </span>
+          <textarea name="bio" placeholder="Descrição do usuário"
+          onChange={(e) => setBio(e.target.value)} value={bio}></textarea>
+        </label>
+        {/* 9 - Select  */}
+        <label>
+          <span>Função:</span>
+          <select name="role" onChange={(e) => setRole(e.target.value)} value={role}>
+            <option value="user">Usuário</option>
+            <option value="editor">Editor</option>
+            <option value="admin">Administrador</option>
+          </select>
         </label>
         <input type="submit" value="Enviar" />
       </form>
