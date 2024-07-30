@@ -17,6 +17,7 @@ O npm é um gerenciador de pacotes do Node, que permite baixar bibliotecas de te
 3. **[Avancando no React](#3-avancando-no-react)**
 4. **[CSS no React](#4-css-no-react)**
 5. **[Formularios no React](#5-formularios-no-react)**
+6. **[Secret Word Game](#6-secret-word-game)**
 
 
 
@@ -382,3 +383,9 @@ O select também será muito semelhante aos outros inputs. Quando temos a altera
 **[⬆ Back to Top](#table-of-contents)**
 
 ---
+
+## 6. Secret Word Game
+
+Nesta seção criamos o projeto "Secret Word Game" que é um jogo de adivinhação de palavras em React JS (parecido com o da TV ) para treinar components, hooks, functions, props, destructuring, CSS, etc.
+
+
