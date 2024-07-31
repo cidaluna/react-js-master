@@ -388,4 +388,14 @@ O select também será muito semelhante aos outros inputs. Quando temos a altera
 
 Nesta seção criamos o projeto "Secret Word Game" que é um jogo de adivinhação de palavras em React JS (parecido com o da TV ) para treinar components, hooks, functions, props, destructuring, CSS, etc.
 
+### Como rodar a aplicação Secret Word (Jogo de Adivinhação de Palavras em React) ?
+**1. Acesse o projeto** https://github.com/cidaluna/react-js-master
+**2. Baixe o zip do projeto** Clique no botão verde chamado Code e escolha a opção Download ZIP
+**2.1. Clone o projeto React** Ao invés de fazer o download, outra opção é instalar o git na sua máquina e fazer o Git Clone do projeto e seguir do passo 5 em diante.
+**3. Instale o Node.JS** Caso não tenha o Node.JS instalado na sua máquina, será necessário a instalação da versão 18+
+**4. Extraia o projeto React** Extraia o arquivo baixado no local de sua preferência e copie o endereço do local onde você extraiu
+**5. Acesse a subpasta secretword** Pelo prompt de comando em modo administrador, cole o local do projeto e navegue nas subpastas até entrar na pasta secretword
+**6. Instale as dependências** Digite npm install e aguarde a instalação das dependências
+**7. Execute o projeto** Em seguida, digite npm run dev
+**8. Navegue pelo projeto**  Aguarde o prompt informar o link de acesso para navegar no Jogo Secret Word.
 
