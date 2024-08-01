@@ -21,7 +21,7 @@ function App() {
       </button>
       
         <Modal modalRef={modalRef}>
-          <p>First paragraph on Modal React (parent rendered)!!!</p>
+          <p>First paragraph on Modal React (parent rendered)!!</p>
         </Modal>
       
     </div>

@@ -15,9 +15,9 @@ const Modal = ({ modalRef, children}) => {
   return (
     <div className={styles.bgg}>
       <div className={styles.modal}>
-        <h3>My Title Modal (know as children)</h3>
+        <h3>My Title Modal (known as children)</h3>
         {children}
-        <p>This is the second modal paragraph! (know as children too)</p>
+        <p>This is the second modal paragraph! (known as children too)</p>
         <button onClick={() => setModalState(false)}>Close</button>
       </div>
     </div>
