@@ -1,31 +1,30 @@
-import { useState } from 'react';
+import { useRef } from 'react';
 import './App.css';
 import Modal from './components/Modal';
 
 function App() {
-  const [open, setOpen] = useState(false); // o estado do modal inicia falso
- 
+
+  const modalRef = useRef();
+
   const handleButtonClick = () => {
-    setOpen(false)
+    modalRef.current.openModal();
   };
 
   console.log('parent rendered');
 
   return (
-    <>
-      <div>
-        <h1 className='card'>Outros hooks</h1>
-        <h2>Testando o modal:</h2>
-        <button className="btn" onClick={() => setOpen(true)}>  {/* altera o estado boleano a cada clique */}
-          Open modal
-        </button>
-        {open && (
-          <Modal onClose={handleButtonClick}>
-            <p>First paragraph on Modal React (parent rendered)</p>
-          </Modal>
-        )}
-      </div>
-    </>
+    <div>
+      <h1 className="card">React Hooks</h1>
+      <h2>Modal com useImperativeHandle</h2>
+      <button className="btn" onClick={handleButtonClick}>
+        Open modal
+      </button>
+      
+        <Modal modalRef={modalRef}>
+          <p>First paragraph on Modal React (parent rendered)!!!</p>
+        </Modal>
+      
+    </div>
   )
 }
 
