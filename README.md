@@ -300,6 +300,10 @@ O state lift ou elevação do state, é quando um estado é movido para o compon
 ### Hook useImperativeHandle
 Praticando hooks no React, feito um modal na seção 03 com o uso do hook useImperativeHandle que é utilizado para expor os dados desejados do componente filho no componente pai. Ou seja, customizando a referência que o componente pai poderá acessar dentro do componente filho.
 
+Screenshot - Modal in React  
+
+![Modal](./03-Avancando-no-React/othersHooks/testHooks/src/assets/modal-reactjs-useImperativeHandle-Cida-Luna-Frontend.PNG)
+
 
 ### Desafio 4
 1. Crie um array de objetos compostos de pessoas, com as propriedades de nome, idade e profissão (array com pelo menos 3 itens);

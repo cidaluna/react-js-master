@@ -7,12 +7,13 @@
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 5;
 }
+
 .modal{
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-    color: purple;
+    color: #373C4F;
     background-color: beige;
     padding: 20px;
     border-radius: 10px;
@@ -30,15 +31,21 @@
   pointer-events: all;
 }
 
+.modal p{
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
 .modal button{
     border: none;
-    border-radius: 10px;
-    background-color: purple;
+    text-align: center;
+    border-radius: 6px;
+    background-color: #373C4F;
     color: white;
-    font-weight: 700;
+    font-weight: 400;
     padding: 10px 15px;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin: 5px 0px;
   }
 
   .modal button:hover{
