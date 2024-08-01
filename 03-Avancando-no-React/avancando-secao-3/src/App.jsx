@@ -1,21 +1,21 @@
-import { useState } from 'react'
-import CarDetails from '../../components/CarDetails'
-import Challenge4UserDetails from '../../components/Challenge4UserDetails'
-import ConditionalRender from '../../components/ConditionalRender'
-import Container from '../../components/Container'
-import ExecuteFunction from '../../components/ExecuteFunction'
-import Fragment from '../../components/Fragment'
-import ListRender from '../../components/ListRender'
-import ManageData from '../../components/ManageData'
-import Message from '../../components/Message'
-import MessageChange from '../../components/MessageChange'
-import Profile from '../../components/Profile'
-import ShowUserName from '../../components/ShowUserName'
-import TaskAdd from '../../components/TaskAdd'
-import TaskCount from '../../components/TaskCount'
-import TaskList from '../../components/TaskList'
-import './App.css'
-import City from './assets/city.jpg'
+import { useState } from 'react';
+import ConditionalRender from '././components/ConditionalRender';
+import './App.css';
+import City from './assets/city.jpg';
+import CarDetails from './components/CarDetails';
+import Challenge4UserDetails from './components/Challenge4UserDetails';
+import Container from './components/Container';
+import ExecuteFunction from './components/ExecuteFunction';
+import Fragment from './components/Fragment';
+import ListRender from './components/ListRender';
+import ManageData from './components/ManageData';
+import Message from './components/Message';
+import MessageChange from './components/MessageChange';
+import Profile from './components/Profile';
+import ShowUserName from './components/ShowUserName';
+import TaskAdd from './components/TaskAdd';
+import TaskCount from './components/TaskCount';
+import TaskList from './components/TaskList';
 
 
 function App() {
@@ -50,7 +50,7 @@ function App() {
     {id: 2, nome:"Maria", idade:17, profissao: "Cozinheira"},
     {id: 3, nome:"Elisama", idade:17, profissao: "Escritora"},
     {id: 4, nome:"Sueli", idade:47, profissao: "Costureira"},
-  ])
+  ]);
 
   return (
     <>
