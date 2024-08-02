@@ -297,8 +297,14 @@ const ExecuteFunction = ({ myPropFunction }) => {
 ### State lift
 O state lift ou elevação do state, é quando um estado é movido para o componente pai, para que o estado seja manipulado ou compartilhado com todos os componentes filhos que desejam acessá-lo. Ou seja, quando os componentes filhos precisam compartilhar do mesmo estado, centralizado e propagado na aplicação.
 
-### Hook useImperativeHandle
-Praticando hooks no React, feito um modal na seção 03 com o uso do hook useImperativeHandle que é utilizado para expor os dados desejados do componente filho no componente pai. Ou seja, customizando a referência que o componente pai poderá acessar dentro do componente filho.
+### React Hooks - Extra
+Além dos hooks vistos no curso React do Zero a Maestria, esta seção 3 apresenta a prática de outros hooks no React JS.
+
+- **`useState()`**:
+
+- **`useEffect()`**: 
+
+- **`useImperativeHandle()`**: Feito uma janela modal na seção 03 com o uso do hook useImperativeHandle que é utilizado para expor os dados desejados do componente filho no componente pai. Ou seja, customizando a referência que o componente pai poderá acessar dentro do componente filho.
 
 Screenshot - Modal in React  
 

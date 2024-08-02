@@ -28,6 +28,7 @@ h1,h2,h3{
   border-radius: 10px;
   border: 2px solid gray;
   padding: 15px;
+  text-align: center;
 }
 
 .btn{
@@ -54,7 +55,7 @@ h1,h2,h3{
 
 .divide1{
   width: 100%;
-  background-color: #e32d2d;
+  background-color: #fff;
   border-radius: 10px;
   margin: 20px 0px;
   padding: 10px;
@@ -69,12 +70,11 @@ h1,h2,h3{
   word-wrap: break-word;
 }
 
-
 @media(max-width: 450px){
   body{
       height: 100vh;
       width: 100vw;
-      background-color: #e573eb;
+      background-color: #c9c9c9;
       outline: none;
       display: flex;
       flex-direction: column;
@@ -101,7 +101,7 @@ h1,h2,h3{
   body{
       height: 100vh;
       width: 100vw;
-      background-color: #7f0186;
+      background-color: #939393;
       outline: none;
       display: flex;
       flex-direction: column;
