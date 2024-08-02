@@ -11,10 +11,10 @@ const Increment = () => {
     };
 
   return (
-    <div>
+    <>
       <h3>{count}</h3>
       <button className={styles.btn} onClick={incrementCount}>Increment</button>
-    </div>
+    </>
   )
 }
 

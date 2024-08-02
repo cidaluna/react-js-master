@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import './App.css';
 import Increment from './components/Increment';
 import Modal from './components/Modal';
+import ResourceType from './components/ResourceType';
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
   console.log('parent rendered');
 
   return (
-    <div>
+    <div className="wrapper">
       <h1 className="card">React Hooks</h1>
       <div className="divide1">
         <h2>Modal com useImperativeHandle:</h2>
@@ -24,8 +25,11 @@ function App() {
         </Modal>
       </div>
       <div className="divide2">
-      <h2>Incremento com useState:</h2>
-      <Increment/>
+        <h2>Incremento com useState:</h2>
+        <Increment/>
+      </div>
+      <div className="divide1">
+        <ResourceType />
       </div>
     </div>
   )
