@@ -12,9 +12,8 @@ body{
 .btn{
   border: none;
   border-radius: 10px;
-  background-color: gray;
+  background-color: #373C4F;
   color: white;
-  font-weight: 700;
   padding: 10px;
   cursor: pointer;
   margin-bottom: 20px;
@@ -22,4 +21,17 @@ body{
 
 .btn:hover{
   background-color: darkslategray;
+}
+
+.divide1{
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.divide2{
+  width: 100%;
+  background-color: #F6F8FA;
+  padding: 10px;
+  border-radius: 10px;
 }
