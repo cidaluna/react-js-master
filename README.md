@@ -304,6 +304,10 @@ Além dos hooks vistos no curso React do Zero a Maestria, esta seção 3 apresen
 
 - **`useEffect()`**: 
 
+- **`useReducer()`**: 
+
+- **`useRef()`**: utilizado para persistir valores entre renderizações, ele pode ser usado para armazenar o valor de uma variável mutável que não provoca uma re-renderização. E também, para acessar um elemento HTML no DOM diretamente.
+
 - **`useImperativeHandle()`**: Feito uma janela modal na seção 03 com o uso do hook useImperativeHandle que é utilizado para expor os dados desejados do componente filho no componente pai. Ou seja, customizando a referência que o componente pai poderá acessar dentro do componente filho.
 
 Screenshot - Modal in React  
