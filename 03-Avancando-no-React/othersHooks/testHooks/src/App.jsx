@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import './App.css';
+import FocusInput from './components/FocusInput';
 import Increment from './components/Increment';
 import Modal from './components/Modal';
 import ResourceType from './components/ResourceType';
@@ -30,6 +31,9 @@ function App() {
       </div>
       <div className="divide1">
         <ResourceType />
+      </div>
+      <div className="divide2">
+        <FocusInput />
       </div>
     </div>
   )

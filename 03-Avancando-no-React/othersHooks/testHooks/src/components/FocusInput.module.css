@@ -17,3 +17,19 @@
     background-color: #373C4F;
     color: #fff;
 }
+
+.pp{
+    color: #373C4F;
+    margin-bottom: 5px;
+}
+
+.customInput{
+    color: #373C4F;
+    line-height: 2rem;
+    width: 40%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
