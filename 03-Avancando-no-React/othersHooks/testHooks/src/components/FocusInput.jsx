@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import styles from './FocusInput.module.css';
 
 const FocusInput = () => {
@@ -11,6 +11,11 @@ const FocusInput = () => {
         inputRef.current.focus();
     }
 
+    const previousName = useRef();
+    useEffect(() => {
+      previousName.current = name;
+    }, [name]);
+
   return (
     <>
       <h2>Focus Input com useRef:</h2>
@@ -20,6 +25,7 @@ const FocusInput = () => {
         value={name}
         />
       <p className={styles.pp}>Hello! My name is {name}</p>
+      <p className={styles.pp}>And my name was {previousName.current}</p>
       <button className={styles.btn} onClick={focusInput}>Focus Input</button>
     </>
   )

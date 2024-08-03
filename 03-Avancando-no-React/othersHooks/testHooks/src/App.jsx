@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import './App.css';
+import Decrement from './components/Decrement';
 import FocusInput from './components/FocusInput';
 import Increment from './components/Increment';
 import Modal from './components/Modal';
@@ -34,6 +35,9 @@ function App() {
       </div>
       <div className="divide2">
         <FocusInput />
+      </div>
+      <div className="divide1">
+        <Decrement />
       </div>
     </div>
   )

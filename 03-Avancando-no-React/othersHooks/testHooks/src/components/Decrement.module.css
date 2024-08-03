@@ -1,0 +1,22 @@
+.btn{
+    border: none;
+    text-align: center;
+    border-radius: 6px;
+    border: 2px solid #ac0067;
+    background-color: #fff;;
+    color: #ac0067;
+    font-weight: 400;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 10px 5px 10px 0px;
+}
+
+.btn:hover{
+    border: 2px solid #ac0067;
+    background-color: #ac0067;
+    color: #fff;
+}
+
+.p, .h2{
+    color: #ac0067;
+}
