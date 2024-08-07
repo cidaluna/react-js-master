@@ -26,6 +26,10 @@ function App() {
   const [pickedWord, setPickedWord] = useState("");
   const [pickedCategory, setPickedCategory] = useState("");
   const [letters, setLetters] = useState([]);
+  const [guessedLetters, setGuessedLetters] = useState([]);   // os acertos
+  const [wrongLetters, setWrongLetters] = useState([]);       // os erros
+  const [guesses, setGuesses] = useState(3);                  // as chances
+  const [score, setScore] = useState(0);                      //  a pontuação
 
   const pickWordAndCategory = () => {
     const categories = Object.keys(words);
@@ -44,7 +48,7 @@ function App() {
     const {word, category} = pickWordAndCategory();
     console.log(word, category);
 
-    // separar a palavra em letras - create an array os letters
+    // separar a palavra em letras - create an array of letters
     let wordLetters = word.split("");
 
     // colocar as letras em minúsculo
@@ -54,7 +58,7 @@ function App() {
     // alterando os estados - fill states
     setPickedWord(word);
     setPickedCategory(category);
-    setLetters(letters);
+    setLetters(wordLetters);
 
     setGameStage(stages[1].name);
   }
@@ -72,7 +76,16 @@ function App() {
   return (
     <div className="app">
       {gameStage === 'start' && <StartScreen startGameProp={startGame}/> }
-      {gameStage === 'game' && <Game verifyLetterProp={verifyLetter} /> }
+      {gameStage === 'game' && 
+      (<Game verifyLetterProp={verifyLetter}
+        pickedWord={pickedWord} 
+        pickedCategory={pickedCategory}
+        letters={letters}
+        guessedLetters={guessedLetters}
+        wrongLetters={wrongLetters}
+        guesses={guesses}
+        score={score}
+      /> )}
       {gameStage === 'end' && <GameOver retryProp={retry} /> }
       
     </div>

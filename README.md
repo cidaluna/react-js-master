@@ -425,3 +425,7 @@ Nesta seção criamos o projeto "Secret Word Game" que é um jogo de adivinhaç�
 
 **8. Navegue pelo projeto**  Aguarde o prompt informar o link de acesso para navegar no Jogo Secret Word.
 
+### Screenshot da tela
+Imagem da tela atual do Secret Word Game (Jogo de adivinhar a palavra)
+![Secret Word Game](./images/tela-jogo-secret-word-reactjs-adivinhar-palavra-cida-luna.PNG)
+
