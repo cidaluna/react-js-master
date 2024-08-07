@@ -2,7 +2,7 @@
 import './App.css';
 
 // React
-import { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 // Data
 import { wordsList } from './data/words';
@@ -22,13 +22,13 @@ function App() {
   const [gameStage, setGameStage] = useState(stages[0].name);
   const [words] = useState(wordsList);
   console.log(words);
-
+  const guessesQty = 3;
   const [pickedWord, setPickedWord] = useState("");
   const [pickedCategory, setPickedCategory] = useState("");
   const [letters, setLetters] = useState([]);
   const [guessedLetters, setGuessedLetters] = useState([]);   // os acertos
   const [wrongLetters, setWrongLetters] = useState([]);       // os erros
-  const [guesses, setGuesses] = useState(3);                  // as chances
+  const [guesses, setGuesses] = useState(guessesQty);                  // as chances
   const [score, setScore] = useState(0);                      //  a pontuação
 
   const pickWordAndCategory = () => {
@@ -64,15 +64,57 @@ function App() {
   }
 
   // process the letter input
-  const verifyLetter = () => {
-    setGameStage(stages[2].name);
+  const verifyLetter = (letter) => {
+    // padronizar a letra que recebemos do usuário
+    const normalizedLetter = letter.toLowerCase();
+
+    //check if çetter has already been utilized
+    if(guessedLetters.includes(normalizedLetter) || wrongLetters.includes(normalizedLetter)){
+      return
+    }
+    console.log(letter);
+
+    // push guessed letter or remove a guess
+    if(letters.includes(normalizedLetter)){
+      setGuessedLetters((actualGuessedLetters)=>[
+        ...actualGuessedLetters,
+        normalizedLetter,
+      ])
+    }else{
+      setWrongLetters((actualWrongLetters)=>[
+        ...actualWrongLetters,
+        normalizedLetter,
+      ]);
+
+      setGuesses((actualGuesses) => actualGuesses - 1);  // ir diminuindo a qtd de tentativas
+    }
+  };
+
+  const clearLettersStates = () =>{
+    setGuessedLetters([]);
+    setWrongLetters([]);
   }
+
+  // monitorar a qtd de tentativas do jogo
+  useEffect(() => {
+    if(guesses <= 0){
+      // reset all states
+      clearLettersStates();
+
+      setGameStage(stages[2].name);
+    }
+  }, [guesses]);
+
+
+  console.log("Letras corretas: ", guessedLetters);
+  console.log("Letras erradas: ", wrongLetters);
 
   // restarts the game
   const retry = () => {
+    setScore(0);
+    setGuesses(guessesQty);
     setGameStage(stages[0].name);
   }
-
   return (
     <div className="app">
       {gameStage === 'start' && <StartScreen startGameProp={startGame}/> }
