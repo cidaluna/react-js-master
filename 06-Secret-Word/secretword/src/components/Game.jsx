@@ -9,7 +9,6 @@ const Game = ({verifyLetterProp, pickedWord, pickedCategory, letters, guessedLet
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     verifyLetterProp(letter);
     setLetter(""); {/* limpar o campo após o envio da letra pelo clique do botão jogar */}
     letterInputRef.current.focus(); {/* após capturar esse elemento no DOM por referência eu aplico o focus */}
