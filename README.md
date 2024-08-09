@@ -404,7 +404,9 @@ O select também será muito semelhante aos outros inputs. Quando temos a altera
 
 ## 6. Secret Word Game
 
-Nesta seção criamos o projeto "Secret Word Game" que é um jogo de adivinhação de palavras em React JS (parecido com o da TV ) para treinar components, hooks, functions, props, destructuring, CSS, etc.
+Nesta seção criamos o projeto "Secret Word Game" que é um jogo de adivinhação de palavras em React JS (parecido com o da TV ) para treinar components, hooks, functions, props, destructuring, CSS, etc. No jogo utilizamos os hooks useCallback, useEffect, useRef, useState.
+
+Neste jogo, o jogador clica em iniciar jogo, insere uma letra e verifica se a mesma corresponde a palavra randômica escolhida. Caso o jogador tenha digitado uma letra incorreta, ele terá até 3 tentativas.
 
 ### Como rodar a aplicação Secret Word (Jogo de Adivinhação de Palavras em React) ?
 **1. Acesse o projeto** https://github.com/cidaluna/react-js-master
@@ -429,3 +431,6 @@ Nesta seção criamos o projeto "Secret Word Game" que é um jogo de adivinhaç�
 Imagem da tela atual do Secret Word Game (Jogo de adivinhar a palavra)
 ![Secret Word Game](./images/tela-jogo-secret-word-reactjs-adivinhar-palavra-cida-luna.PNG)
 
+#### JSON Server
+O JSON Server é um pacote npm, ele simula uma API e isso nos possibilita fazer requisições HTTP.
+Vamos aprender a integrar este recursi com o React. Podemos entender isso como uma etapa de preparação para APIs reais, ou seja, atingir o mesmo resultado mas sem precisar de uma estrutura no back-end.
