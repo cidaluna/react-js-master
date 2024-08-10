@@ -302,13 +302,15 @@ Além dos hooks vistos no curso React do Zero a Maestria, esta seção 3 apresen
 
 - **`useState()`**:
 
-- **`useEffect()`**: 
+- **`useEffect()`**: faz com que determinada ação seja executada apenas uma vez. Isso é interessante pois os componentes estão sempre se re-renderizando, então precisamos ter ações únicas as vezes.
+O useEffect ainda possui um array de dependências, que deve conter os dados que ativem a execução da função de forma automática. 
+O useEffect estará presente nas requisições assíncronas, como em chamada a API.
 
 - **`useReducer()`**: 
 
 - **`useRef()`**: utilizado para persistir valores entre renderizações, ele pode ser usado para armazenar o valor de uma variável mutável que não provoca uma re-renderização. E também, para acessar um elemento HTML no DOM diretamente.
 
-- **`useImperativeHandle()`**: Feito uma janela modal na seção 03 com o uso do hook useImperativeHandle que é utilizado para expor os dados desejados do componente filho no componente pai. Ou seja, customizando a referência que o componente pai poderá acessar dentro do componente filho.
+- **`useImperativeHandle()`**: feito uma janela modal na seção 03 com o uso do hook useImperativeHandle que é utilizado para expor os dados desejados do componente filho no componente pai. Ou seja, customizando a referência que o componente pai poderá acessar dentro do componente filho.
 
 Screenshot - Modal in React  
 
