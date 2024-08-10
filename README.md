@@ -18,6 +18,7 @@ O npm é um gerenciador de pacotes do Node, que permite baixar bibliotecas de te
 4. **[CSS no React](#4-css-no-react)**
 5. **[Formularios no React](#5-formularios-no-react)**
 6. **[Secret Word Game](#6-secret-word-game)**
+7. **[Requisicoes HTTP no React](#7-requisicoes-http-no-react)**
 
 
 
@@ -433,6 +434,15 @@ Neste jogo, o jogador clica em iniciar jogo, insere uma letra e verifica se a me
 Imagem da tela atual do Secret Word Game (Jogo de adivinhar a palavra)
 ![Secret Word Game](./images/tela-jogo-secret-word-reactjs-adivinhar-palavra-cida-luna.PNG)
 
+**[⬆ Back to Top](#table-of-contents)**
+
+---
+
+## 7. Requisicoes HTTP no React
+
 #### JSON Server
 O JSON Server é um pacote npm, ele simula uma API e isso nos possibilita fazer requisições HTTP.
 Vamos aprender a integrar este recursi com o React. Podemos entender isso como uma etapa de preparação para APIs reais, ou seja, atingir o mesmo resultado mas sem precisar de uma estrutura no back-end.
+
+#### Adicionando dados
+Para adicionar um item vamos precisar resgatar os dados do form com o useState. Reunir eles em uma função após o submit e enviar um request POST para a nossa API. O processe é bem parecido com o resgate de dados, mas agora estamos enviando dados.

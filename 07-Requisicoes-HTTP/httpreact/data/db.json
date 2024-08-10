@@ -1,19 +1,44 @@
 {
-    "products": [
-      {
-        "id": 1,
-        "name": "Camisa",
-        "price": 59.9
-      },
-      {
-        "id": 2,
-        "name": "Calça vermelha",
-        "price": 90
-      },
-      {
-        "id": 3,
-        "name": "Boné aba reta",
-        "price": 29.9
-      }
-    ]
-  }
+  "products": [
+    {
+      "id": 1,
+      "name": "Camisa",
+      "price": 59.9
+    },
+    {
+      "id": 2,
+      "name": "Calça vermelha",
+      "price": 90
+    },
+    {
+      "id": 3,
+      "name": "Boné aba reta",
+      "price": 29.9
+    },
+    {
+      "name": "cszc",
+      "price": 0,
+      "id": 4
+    },
+    {
+      "name": "cszc",
+      "price": "2",
+      "id": 5
+    },
+    {
+      "name": "wsws",
+      "price": "2",
+      "id": 6
+    },
+    {
+      "name": "wsws",
+      "price": "2",
+      "id": 7
+    },
+    {
+      "name": "teste",
+      "price": "89.9",
+      "id": 8
+    }
+  ]
+}
