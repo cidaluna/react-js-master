@@ -489,3 +489,10 @@ Precisamos instalar essa dependência no nosso projeto, a configuração e utili
 3. Instale também o json server 'npm install json-server@0.17.0'
 4. Coloque pelo menos três produtos da seção anterior no seu arquivo db.json
 5. Crie um script para inicializar o json-server
+
+#### Configurando o React Router
+Para configurar o React Router vamos ter que importar três elementos de react-router-dom:
+BrowserRouter - define onde a área do nosso app que vai trocar as páginas;
+Routes - define as rotas;
+Route - um elemento deste para cada rota, configurar com path e componente da rota.
+
