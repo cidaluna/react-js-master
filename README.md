@@ -19,6 +19,7 @@ O npm é um gerenciador de pacotes do Node, que permite baixar bibliotecas de te
 5. **[Formularios no React](#5-formularios-no-react)**
 6. **[Secret Word Game](#6-secret-word-game)**
 7. **[Requisicoes HTTP no React](#7-requisicoes-http-no-react)**
+8. **[React Router](#8-react-router)**
 
 
 
@@ -472,3 +473,19 @@ Podemos tratar os erros das requisições por meio de um try catch. Além de peg
 4. Você vai precisar identificar   requisição de DELETE, para mudar o verbo http das ..
 5. Utilize a ideia do método de POST para derivar para o DELETE, pode ser com if/else.
 
+**[⬆ Back to Top](#table-of-contents)**
+
+---
+
+## 8. React Router
+
+#### O que é o React Router?
+O React Router é um dos pacotes mais utilizados para criar uma estrutura de rotas em aplicações React. Ou seja, ele permite que nossas SPAs tenham múltiplas páginas.
+Precisamos instalar essa dependência no nosso projeto, a configuração e utilização é simples. Também temos outras funções como Redirect, Nested Routes, Not Found Routes e outros.
+
+### Desafio 7
+1. Crie um novo projeto para esta unidade
+2. Instale o módulo do React Router neste projeto, que é o react-router-dom
+3. Instale também o json server 'npm install json-server@0.17.0'
+4. Coloque pelo menos três produtos da seção anterior no seu arquivo db.json
+5. Crie um script para inicializar o json-server

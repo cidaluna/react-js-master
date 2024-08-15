@@ -1,0 +1,24 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Camisa",
+        "price": 590.9
+      },
+      {
+        "id": 2,
+        "name": "Calça vermelha",
+        "price": 900
+      },
+      {
+        "id": 3,
+        "name": "Boné aba reta",
+        "price": 55
+      },
+      {
+        "id": 4,
+        "name": "Mouse",
+        "price": 199
+      }
+    ]
+  }
