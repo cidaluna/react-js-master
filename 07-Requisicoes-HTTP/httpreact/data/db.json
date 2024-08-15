@@ -16,34 +16,9 @@
       "price": 29.9
     },
     {
-      "name": "cszc",
-      "price": 0,
-      "id": 4
-    },
-    {
-      "name": "cszc",
-      "price": "2",
-      "id": 5
-    },
-    {
-      "name": "wsws",
-      "price": "2",
-      "id": 6
-    },
-    {
-      "name": "wsws",
-      "price": "2",
-      "id": 7
-    },
-    {
-      "name": "teste",
-      "price": "89.9",
-      "id": 8
-    },
-    {
-      "name": "cadeira",
-      "price": "200",
-      "id": 9
+      "name": "mouse",
+      "price": "60",
+      "id": 16
     }
   ]
 }

@@ -449,3 +449,9 @@ Para adicionar um item vamos precisar resgatar os dados do form com o useState. 
 
 #### Carregamento dinâmico de dados
 Se a requisição foi feita com sucesso, podemos adicionar o item a lista após o request. Isso torna a aplicação mais performática. Utilizamos o set do useState para isso.
+
+#### Custom hook para o fetch
+É normal dividir funções que podem ser reaproveitadas em hooks. Esta técnica é chamada de custom hook e vamos construir um para o resgate de dados. Os hooks geralmente ficam numa pasta hooks, devemos utilizar o padrão useName. Basicamente criamos uma função e exportamos ela.
+
+#### Refatorando o POST
+Podemos utilizar o mesmo hook para incluir uma etapa de POST. Vamos criar um novo useEffect que mapeia uma outra mudança de estado. Após ela ocorrer executamos a adição do produto. Obs: nem sempre reutilizar um hook é a melhor estratégia.
