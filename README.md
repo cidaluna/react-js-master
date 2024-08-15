@@ -446,3 +446,6 @@ Vamos aprender a integrar este recursi com o React. Podemos entender isso como u
 
 #### Adicionando dados
 Para adicionar um item vamos precisar resgatar os dados do form com o useState. Reunir eles em uma função após o submit e enviar um request POST para a nossa API. O processe é bem parecido com o resgate de dados, mas agora estamos enviando dados.
+
+#### Carregamento dinâmico de dados
+Se a requisição foi feita com sucesso, podemos adicionar o item a lista após o request. Isso torna a aplicação mais performática. Utilizamos o set do useState para isso.
