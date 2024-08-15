@@ -455,3 +455,6 @@ Se a requisição foi feita com sucesso, podemos adicionar o item a lista após 
 
 #### Refatorando o POST
 Podemos utilizar o mesmo hook para incluir uma etapa de POST. Vamos criar um novo useEffect que mapeia uma outra mudança de estado. Após ela ocorrer executamos a adição do produto. Obs: nem sempre reutilizar um hook é a melhor estratégia.
+
+#### Estado de loading
+Quando fizermos requisições para APIs é normal que haja um intervalo de loading entre a requisição e o recebimento da resposta. Podemos fazer isso no nosso hook também. Identificar quando começa e termina este estado.

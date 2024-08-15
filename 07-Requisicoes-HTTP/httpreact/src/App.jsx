@@ -10,7 +10,7 @@ function App() {
   const [price, setPrice] = useState(0);
 
   // 4 - Resgatando dados com o custom hook
-  const {data: itemsList, httpConfig} = useFetch(url);  // renomeando a lista de data para itemsList
+  const {data: itemsList, httpConfig, loading} = useFetch(url);  // renomeando a lista de data para itemsList
   //console.log(data);
 
   // 1 - Resgatando dados
@@ -55,13 +55,17 @@ function App() {
   return (
    <div className="app">
     <h1>Lista de Produtos</h1>
-    <ul>
-      {itemsList && itemsList.map((prod) => (
-        <li key={prod.id}>
-          {prod.name} - R$ {prod.price}
-        </li>
-      ))}
-    </ul>
+    { /* 6 - Loading */ }
+    {loading && <p>Carregando dados...</p>}
+    {!loading && (
+        <ul>
+        {itemsList && itemsList.map((prod) => (
+          <li key={prod.id}>
+            {prod.name} - R$ {prod.price}
+          </li>
+        ))}
+        </ul>
+    )}
     <div className="add-product">
       <form onSubmit={handleSubmit}>
         <label>
