@@ -10,7 +10,7 @@ function App() {
   const [price, setPrice] = useState(0);
 
   // 4 - Resgatando dados com o custom hook
-  const {data: itemsList, httpConfig, loading} = useFetch(url);  // renomeando a lista de data para itemsList
+  const {data: itemsList, httpConfig, loading, error} = useFetch(url);  // renomeando a lista de data para itemsList
   //console.log(data);
 
   // 1 - Resgatando dados
@@ -52,16 +52,24 @@ function App() {
   setName("");
   setPrice("");
 };
+
+  // 8 - desafio 6 excluir um produto
+  const handleRemove = (id) => {
+    httpConfig(id, "DELETE");
+  }
+
   return (
    <div className="app">
     <h1>Lista de Produtos</h1>
     { /* 6 - Loading */ }
     {loading && <p>Carregando dados...</p>}
-    {!loading && (
+    {error && <p>{error}</p>}
+    {!error && (
         <ul>
         {itemsList && itemsList.map((prod) => (
           <li key={prod.id}>
             {prod.name} - R$ {prod.price}
+            <button onClick={()=>handleRemove(prod.id)}>Excluir</button>
           </li>
         ))}
         </ul>

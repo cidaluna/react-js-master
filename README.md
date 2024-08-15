@@ -464,3 +464,11 @@ Podemos bloquear ações indevidas em outras requests, como no POST. Uma ação 
 
 #### Tratando erros
 Podemos tratar os erros das requisições por meio de um try catch. Além de pegar os dados do erro, também podemos alterar um state para imprimir um elemento se algo der errado. Desta maneira, conseguimos prever vários cenários (dados resgatados, carregamento e erro).
+
+### Desafio 6
+1. Crie um botão nos produtos;
+2. Este botão deve disparar uma função de remoção de produto;
+3. A URL deve ser a mesma da API + o id do produto: products/1
+4. Você vai precisar identificar   requisição de DELETE, para mudar o verbo http das ..
+5. Utilize a ideia do método de POST para derivar para o DELETE, pode ser com if/else.
+
