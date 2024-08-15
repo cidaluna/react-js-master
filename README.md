@@ -461,3 +461,6 @@ Quando fizermos requisições para APIs é normal que haja um intervalo de loadi
 
 #### Estado de loading no POST
 Podemos bloquear ações indevidas em outras requests, como no POST. Uma ação interessante é remover a ação de adicionar outro item enquanto o request ainda não finalizou.
+
+#### Tratando erros
+Podemos tratar os erros das requisições por meio de um try catch. Além de pegar os dados do erro, também podemos alterar um state para imprimir um elemento se algo der errado. Desta maneira, conseguimos prever vários cenários (dados resgatados, carregamento e erro).
