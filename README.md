@@ -521,6 +521,10 @@ Jest e Cypress são ferramentas usadas para diferentes tipos de testes no ecossi
 
   **Ideal Para:** Testar lógica de componentes e funções.
 
+  **Extensão padrão:** Exemplos `MyComponent.test.js`, `MyComponent.spec.js`
+
+  **Estrutura de diretórios do Jest:** my-project/src/__tests__/MyComponent.test.js
+
   **Sobre a Sintaxe do Jest**
 
   **1.Importações:** Importa funções do React Testing Library (como `render`, `screen`, `fireEvent`) para interagir com componentes necessários para os testes.
@@ -542,7 +546,7 @@ Jest e Cypress são ferramentas usadas para diferentes tipos de testes no ecossi
 | **Abrir Interface Gráfica** | `npx cypress open`                | `yarn run cypress open`              |
 | **Executar Testes Específicos** | Configurar via arquivos ou tags na interface do Cypress | Configurar via arquivos ou tags na interface do Cypress |
 
-  **Uso Principal:** Testes end-to-end.
+  **Uso Principal:** Testes end-to-end. (Esse conhecimento pode ser um requisito adicional em vagas onde a empresa enfatiza a automação de testes para fluxos de usuário UI).
 
   **Execução:** No navegador real, o que é mais lento, mas mais próximo do comportamento real do usuário.
 
@@ -551,6 +555,10 @@ Jest e Cypress são ferramentas usadas para diferentes tipos de testes no ecossi
   **Depuração:** Oferece uma interface gráfica rica e interativa para depuração.
 
   **Ideal Para:** Testar fluxos de usuário e garantir que a aplicação funcione como esperado em um ambiente real.
+
+  **Extensão padrão:** Exemplos `MyComponent.spec.js`, `MyComponent.spec.ts`, `MyComponent.cy.js`
+
+  **Estrutura de diretórios do Cypress:** my-project/cypress/integration/myComponent.spec.js ou my-project/cypress/e2e/myComponent.spec.js
 
   **Sobre a Sintaxe do Cypress**
 
