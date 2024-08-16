@@ -499,7 +499,7 @@ Route - um elemento deste para cada rota, configurar com path e componente da ro
 ### Testes na aplicação - Jest e Cypress
 Jest e Cypress são ferramentas usadas para diferentes tipos de testes no ecossistema JavaScript/React.
 
-### Jest:
+### Jest
 
 #### Comandos Jest:
 
@@ -529,8 +529,9 @@ Jest e Cypress são ferramentas usadas para diferentes tipos de testes no ecossi
 
   **3.Expectativas:** Usa `expect` para definir as expectativas e asserções.
 
+**[⬆ Back to Top](#table-of-contents)**
 
-### Cypress:
+### Cypress
 
 #### Comandos Cypress:
 
