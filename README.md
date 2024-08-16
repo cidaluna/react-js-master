@@ -500,6 +500,17 @@ Route - um elemento deste para cada rota, configurar com path e componente da ro
 Jest e Cypress são ferramentas usadas para diferentes tipos de testes no ecossistema JavaScript/React.
 
 ### Jest:
+
+#### Comandos Jest:
+
+  | Ação                    | Comando NPM                          | Comando Yarn                         |
+|-------------------------|--------------------------------------|--------------------------------------|
+| **Instalar**            | `npm install --save-dev jest`         | `yarn add --dev jest`                |
+| **Executar Testes**     | `npm test`                           | `yarn test`                          |
+| **Executar Testes Específicos** | `npx jest path/to/test/file.test.js` | `npx jest path/to/test/file.test.js` |
+| **Executar com Cobertura de Código** | `npx jest --coverage`         | `npx jest --coverage`               |
+| **Executar em Modo de Observação** | `npx jest --watch`             | `npx jest --watch`                  |
+
   **Uso Principal:** Testes unitários e de integração.
 
   **Execução:** Rápida e isolada; não requer um navegador real.
@@ -518,18 +529,18 @@ Jest e Cypress são ferramentas usadas para diferentes tipos de testes no ecossi
 
   **3.Expectativas:** Usa `expect` para definir as expectativas e asserções.
 
-### Comandos Jest:
+
+### Cypress:
+
+#### Comandos Cypress:
 
   | Ação                    | Comando NPM                          | Comando Yarn                         |
 |-------------------------|--------------------------------------|--------------------------------------|
-| **Instalar**            | `npm install --save-dev jest`         | `yarn add --dev jest`                |
-| **Executar Testes**     | `npm test`                           | `yarn test`                          |
-| **Executar Testes Específicos** | `npx jest path/to/test/file.test.js` | `npx jest path/to/test/file.test.js` |
-| **Executar com Cobertura de Código** | `npx jest --coverage`         | `npx jest --coverage`               |
-| **Executar em Modo de Observação** | `npx jest --watch`             | `npx jest --watch`                  |
+| **Instalar**            | `npm install --save-dev cypress`       | `yarn add --dev cypress`            |
+| **Executar Testes**     | `npx cypress run`                    | `yarn run cypress run`               |
+| **Abrir Interface Gráfica** | `npx cypress open`                | `yarn run cypress open`              |
+| **Executar Testes Específicos** | Configurar via arquivos ou tags na interface do Cypress | Configurar via arquivos ou tags na interface do Cypress |
 
-
-### Cypress:
   **Uso Principal:** Testes end-to-end.
 
   **Execução:** No navegador real, o que é mais lento, mas mais próximo do comportamento real do usuário.
@@ -548,11 +559,3 @@ Jest e Cypress são ferramentas usadas para diferentes tipos de testes no ecossi
 
   **3.Asserções:** Usa comandos de asserção específicos do Cypress como `should` para verificar o estado dos elementos no navegador.
 
-  ### Comandos Cypress:
-
-  | Ação                    | Comando NPM                          | Comando Yarn                         |
-|-------------------------|--------------------------------------|--------------------------------------|
-| **Instalar**            | `npm install --save-dev cypress`       | `yarn add --dev cypress`            |
-| **Executar Testes**     | `npx cypress run`                    | `yarn run cypress run`               |
-| **Abrir Interface Gráfica** | `npx cypress open`                | `yarn run cypress open`              |
-| **Executar Testes Específicos** | Configurar via arquivos ou tags na interface do Cypress | Configurar via arquivos ou tags na interface do Cypress |
