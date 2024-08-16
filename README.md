@@ -499,17 +499,26 @@ Route - um elemento deste para cada rota, configurar com path e componente da ro
 ### Testes na aplicação - Jest e Cypress
 Jest e Cypress são ferramentas usadas para diferentes tipos de testes no ecossistema JavaScript/React.
 
-#### Jest:
+### Jest:
   **Uso Principal:** Testes unitários e de integração.
+
   **Execução:** Rápida e isolada; não requer um navegador real.
+
   **Ambiente de Teste:** Simulado e controlado; ótimo para testar lógica interna.
+
   **Depuração:** Menos interativo; os resultados são exibidos no terminal.
+
   **Ideal Para:** Testar lógica de componentes e funções.
 
   **Sobre a Sintaxe do Jest**
+
   **1.Importações:** Importa funções do React Testing Library (como `render`, `screen`, `fireEvent`) para interagir com componentes necessários para os testes.
+
   **2.Descrição do Teste:** Usa `describe` para agrupar testes relacionados e `it` (ou `test`) para definir casos de teste individuais.
+
   **3.Expectativas:** Usa `expect` para definir as expectativas e asserções.
+
+### Comandos Jest:
 
   | Ação                    | Comando NPM                          | Comando Yarn                         |
 |-------------------------|--------------------------------------|--------------------------------------|
@@ -520,17 +529,26 @@ Jest e Cypress são ferramentas usadas para diferentes tipos de testes no ecossi
 | **Executar em Modo de Observação** | `npx jest --watch`             | `npx jest --watch`                  |
 
 
-#### Cypress:
+### Cypress:
   **Uso Principal:** Testes end-to-end.
+
   **Execução:** No navegador real, o que é mais lento, mas mais próximo do comportamento real do usuário.
+
   **Ambiente de Teste:** Real; ideal para testar a interação do usuário e integração com o backend.
+
   **Depuração:** Oferece uma interface gráfica rica e interativa para depuração.
+
   **Ideal Para:** Testar fluxos de usuário e garantir que a aplicação funcione como esperado em um ambiente real.
 
   **Sobre a Sintaxe do Cypress**
-    **1.Descrição do teste:** Usa `describe` para agrupar testes e `it` para definir casos de teste.
-    **2.Comandos de Interação:** Usa comandos específicos do Cypress como `cy.visit`, `cy.contains`, e `cy.click` para interagir com a aplicação e verificar o estado.
-    **3.Asserções:** Usa comandos de asserção específicos do Cypress como `should` para verificar o estado dos elementos no navegador.
+
+  **1.Descrição do teste:** Usa `describe` para agrupar testes e `it` para definir casos de teste.
+
+  **2.Comandos de Interação:** Usa comandos específicos do Cypress como `cy.visit`, `cy.contains`, e `cy.click` para interagir com a aplicação e verificar o estado.
+
+  **3.Asserções:** Usa comandos de asserção específicos do Cypress como `should` para verificar o estado dos elementos no navegador.
+
+  ### Comandos Cypress:
 
   | Ação                    | Comando NPM                          | Comando Yarn                         |
 |-------------------------|--------------------------------------|--------------------------------------|
