@@ -9,3 +9,7 @@ input, textarea, select{
     display: block;
     margin-top: 10px;
 }
+
+.myInput{
+    color: red;
+}

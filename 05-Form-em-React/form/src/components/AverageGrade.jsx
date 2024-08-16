@@ -17,7 +17,7 @@ const AverageGrade = ({ grades }) => {
     return (
     <div>
         <p>Grades values: {grades.map((grad) => (grad +", "))}</p>
-        <p>Average Grade: {computeAverageGrade()}</p>
+        <p>Paragraph Average Grade: {computeAverageGrade()}</p>
     </div>
   )
 }

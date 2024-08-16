@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './MyForm.css';
+import styles from './MyForm.module.css';
 
 const MyForm = ({ userProp }) => {
     // 3 - Gerenciamento de dados
@@ -23,10 +23,8 @@ const MyForm = ({ userProp }) => {
       setName("");
       setEmail("");
       setBio("");
-    };
-
-    // console.log(name);
-    // console.log(email);
+      setRole("");
+  };
 
   return (
     <div>
@@ -36,7 +34,7 @@ const MyForm = ({ userProp }) => {
       <form onSubmit={handleSubmit}>
         <div>
             <label htmlFor="name">Nome: </label>
-            <input type="text" name="name" placeholder="Digite o seu nome" 
+            <input className={styles.myInput} type="text" id="name" name="name" placeholder="Digite o seu nome" 
             onChange={handleName}
             value={name}
             />
@@ -54,7 +52,7 @@ const MyForm = ({ userProp }) => {
         <label>
           <span>Bio: </span>
           <textarea name="bio" placeholder="Descrição do usuário"
-          onChange={(e) => setBio(e.target.value)} value={bio}></textarea>
+          onChange={(e) => setBio(e.target.value)} value={bio} />
         </label>
         {/* 9 - Select  */}
         <label>
@@ -68,7 +66,7 @@ const MyForm = ({ userProp }) => {
         <input type="submit" value="Enviar" />
       </form>
     </div>
-  )
-}
+  );
+};
 
 export default MyForm

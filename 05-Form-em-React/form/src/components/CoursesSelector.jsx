@@ -1,7 +1,7 @@
 
 const OPTIONS = ["Maths", "Literature", "History"];
 
-export function CoursesSelector() {
+const CoursesSelector = () => {
   return (
     <select>
       {OPTIONS.map((opt) => (
@@ -10,5 +10,7 @@ export function CoursesSelector() {
         </option>
       ))}
     </select>
-  )
+  );
 }
+
+export default CoursesSelector
