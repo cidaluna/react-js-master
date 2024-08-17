@@ -568,3 +568,8 @@ Jest e Cypress são ferramentas usadas para diferentes tipos de testes no ecossi
 
   **3.Asserções:** Usa comandos de asserção específicos do Cypress como `should` para verificar o estado dos elementos no navegador.
 
+### Screenshot da tela de teste com Cypress
+Imagem da tela de teste end to end com Cypress e2e (Componente List Wrapper)
+![Cypress Tests](./images/tela-teste-cypress-e2e-reactjs-ui-fluxo-do-usuario-cida-luna.PNG)
+
+

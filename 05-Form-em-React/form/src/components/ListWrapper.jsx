@@ -11,6 +11,7 @@ const ListWrapper = ({ items }) => {
         <ul>
           {items.map(item => (
             <li
+              data-cy="list-item"
               key={item.id}
               onClick={() => setSelectedItemId(item.id)}
               style={{
