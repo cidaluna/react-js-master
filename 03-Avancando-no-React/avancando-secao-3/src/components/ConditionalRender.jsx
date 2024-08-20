@@ -12,12 +12,12 @@ const ConditionalRender = () => {
       {!x && <p>Agora o x é falso!</p>}  { /* F && F = F */}
       {name === "Cida Luna" ? (
         <div>
-          <p>O nome é Cida Luna</p>
+          <p className='nameDisplay'>O nome é Cida Luna</p>
         </div>
       ) : (
         <div>Nome não encontrado!</div>
       ) }
-      <button onClick={() => setName("Cida Luna")}>Reset nome</button>
+      <button className="resetBtn" onClick={() => setName("Cida Luna")}>Reset nome</button>
     </div>
   );
 };
