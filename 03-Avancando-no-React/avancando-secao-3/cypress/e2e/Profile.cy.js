@@ -18,18 +18,17 @@ describe('My Tests', () => {
         });
     });
 
-    it('Show avatar image', () => {
-        // Act 
-        cy.get('.avatar').click();
-        // Assert
-        cy.get('.avatar').should('be.visible');
+    it('Shows avatar image', () => {
+        // Act and Assert
+        cy.get('.avatar').should('be.visible')
+          .should('have.attr', 'alt', 'Test image'); // Verifica se o atributo alt está presente com o valor informado
     });
 
-    it('Show info username', () => {
-        // Act 
-        cy.get('.profile p').click();
-        // Assert
-        cy.get('.profile').contains('p', 'Username: Lin', { matchCase: false }); // use matchCase to ignore case sensitivity
+    it('Shows info username', () => {
+        // Act and Assert
+        cy.get('.profile p')
+          .should('contain.text', 'Username: Lin', { matchCase: false }) // use matchCase to ignore case sensitivity
+          .and('be.visible');
     });
 
 });
