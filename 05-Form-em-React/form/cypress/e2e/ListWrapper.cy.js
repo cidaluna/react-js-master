@@ -34,6 +34,29 @@ describe('ListWrapper Component', () => {
       });
     });
 
+    it('check the quantity of li elements', () => {
+      cy.get('li').should('have.length', 3);
+    });
+
+    it('if exists SQL text', () => {
+      cy.get('li:contains("SQL")');
+      cy.get('[data-cy="list-item"]').contains('SQL');
+      cy.contains("SQL");
+      cy.contains('li', 'SQL');
+      cy.get('.myListCy').contains('sql', { matchCase: false }) // use matchCase to ignore case sensitivity
+    });
+
+    it('click on a specific element', () => {
+      cy.get('li:contains("SQL")').click();
+    });
+
+    it('shift click on first li', () => {
+      // execute a SHIFT + click on the first <li>
+      cy.get('li:first').click({
+        shiftKey: true,
+      });
+    });
+
   /*
   cy.contains(): Procura por texto diretamente no DOM. É uma forma simples de verificar se um texto 
   específico está visível na página.
@@ -42,4 +65,4 @@ describe('ListWrapper Component', () => {
   recomendada porque torna a  seleção de elementos mais robusta e menos sujeita a mudanças no layout
   ou estilo. Depois de selecionar os elementos, você verifica se eles contêm o texto esperado.
   */
-});
+});  // fecha o describe

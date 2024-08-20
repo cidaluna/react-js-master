@@ -6,9 +6,9 @@ const ListWrapper = ({ items }) => {
     const selectedItem = items.find(item => item.id === selectedItemId);
 
     return (
-      <>
+      <div>
         Opção selecionada: {selectedItem && <div>{selectedItem.name}</div>}
-        <ul>
+        <ul className='myListCy'>
           {items.map(item => (
             <li
               data-cy="list-item"
@@ -26,7 +26,7 @@ const ListWrapper = ({ items }) => {
             </li>
           ))}
         </ul>
-      </>
+      </div>
     );
 }
 

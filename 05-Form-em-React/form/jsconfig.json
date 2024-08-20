@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./",
+      "paths": {
+        "cypress/*": ["node_modules/cypress/*"],
+        "@types/*": ["node_modules/@types/*"]
+      }
+    },
+    "include": [
+      "cypress/**/*.js",
+      "cypress/**/*.d.ts"
+    ]
+  }
+  
