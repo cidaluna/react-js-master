@@ -39,11 +39,19 @@ describe('ListWrapper Component', () => {
     });
 
     it('if exists SQL text', () => {
-      cy.get('li:contains("SQL")');
-      cy.get('[data-cy="list-item"]').contains('SQL');
-      cy.contains("SQL");
-      cy.contains('li', 'SQL');
-      cy.get('.myListCy').contains('sql', { matchCase: false }) // use matchCase to ignore case sensitivity
+      cy.get('li:contains("SQL")'); // Forma menos confiável. Melhor evitar.
+      cy.get('[data-cy="list-item"]').contains('SQL'); // Forma recomendada para testes robustos e específicos usando atributos de dados.
+      cy.contains("SQL"); // Útil para buscas rápidas em qualquer lugar do DOM, mas pode ser menos preciso.
+      cy.contains('li', 'SQL'); // Específico para <li> e útil para encontrar itens de lista.
+      cy.get('.myListCy').contains('sql', { matchCase: false }) // Bom para ignorar case sensitive em elementos específicos
+    });
+
+    it('refacterd if exists SQL text', () => {
+      cy.get('li').contains('SQL').should('exist'); 
+      cy.get('[data-cy="list-item"]').should('contain', 'SQL'); // Melhor opção é esta que usa data-cy
+      cy.contains('SQL').should('exist');
+      cy.contains('li', 'SQL').should('exist');
+      cy.get('.myListCy').should('contain.text', 'sql');
     });
 
     it('click on a specific element', () => {
