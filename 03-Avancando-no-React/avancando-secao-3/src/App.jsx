@@ -73,7 +73,7 @@ function App() {
           <Profile avatarUrl={avatar} avatarAltText={alt} avatarUser={user} />
         </div>
         <div>
-          <h1>Desestrutando:</h1>  {/* Trabalhando com destructuring */ }
+          <h1>Desestruturando:</h1>  {/* Trabalhando com destructuring */ }
           <CarDetails brand="VW" km={100000} color="Azul" newCar={false} />
         </div>
         <div>
