@@ -514,6 +514,10 @@ Desta maneira, qualquer rota que nao exista cairá neste componente.
 #### Link ativo
 Para ter fácil acesso a uma modificação para os links ativos na barra de navegação, vamos trocar o Link pelo NavLink. Neste elemento temos acesso a um valor chamado isActive, ou seja, podemos ativar uma classe se a rota atual for a que está no atributo to.
 
+#### Search params
+É um recurso que permite obter o que vem na URL em forma de parâmetro. Exemplo: `products?q=camisa`.
+Utilizamos o hook useSearchParams para obtê-los. Com este recurso fica simples fazer uma funcionalidade de busca no sistema. 
+
 
 ### Testes na aplicação - Jest e Cypress
 Jest e Cypress são ferramentas usadas para diferentes tipos de testes no ecossistema JavaScript/React.
