@@ -511,6 +511,9 @@ Neste caso, vamos precisar criar um componente que corresponda com o padrão ind
 Podemos criar uma página não encontrada (404) facilmente com o React Router. Basta criarmos o componente da página e no arquivo App.jsx definir um path como *
 Desta maneira, qualquer rota que nao exista cairá neste componente.
 
+#### Link ativo
+Para ter fácil acesso a uma modificação para os links ativos na barra de navegação, vamos trocar o Link pelo NavLink. Neste elemento temos acesso a um valor chamado isActive, ou seja, podemos ativar uma classe se a rota atual for a que está no atributo to.
+
 
 ### Testes na aplicação - Jest e Cypress
 Jest e Cypress são ferramentas usadas para diferentes tipos de testes no ecossistema JavaScript/React.
