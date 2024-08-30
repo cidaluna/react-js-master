@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Produtos</h1>
+      <h1>Home - Produtos</h1>
       {error && <p>{error}</p>}
       <ul className="products">
         {items && items.map(item => (

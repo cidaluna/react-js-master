@@ -505,8 +505,7 @@ Na página podemos utilizar o hook useParams para resgatar esta informação.
 
 #### Nested route
 As nested routes indicam URLs mais complexas, como: `/products/:id/something`
-Neste caso, vamos precisar criar um componente que corresponda com o padrão indicado e também a URL em App.jsx
-Na nested route teremos o acesso ao parâmetro da URL também.
+Neste caso, vamos precisar criar um componente que corresponda com o padrão indicado e também a URL em App.jsx. Na nested route teremos o acesso ao parâmetro da URL também.
 
 
 ### Testes na aplicação - Jest e Cypress
