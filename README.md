@@ -495,6 +495,19 @@ Para configurar o React Router vamos ter que importar três elementos de react-r
 BrowserRouter - define onde a área do nosso app que vai trocar as páginas;
 Routes - define as rotas;
 Route - um elemento deste para cada rota, configurar com path e componente da rota.
+Para criar links para as páginas vamos precisar utilizar o Link do React Router. No link configuramos o parâmetro to, que recebe a URL/path que será redirecionado quando clicar no link.
+
+#### Rota dinâmica
+Para criar uma rota dinâmica vamos precisar definir uma nova Route em App.jsx.
+Deve ter o padrão de: `/products/:id `
+Onde :id é o dado dinâmico, ou seja, podemos ter qualquer valor.
+Na página podemos utilizar o hook useParams para resgatar esta informação.
+
+#### Nested route
+As nested routes indicam URLs mais complexas, como: `/products/:id/something`
+Neste caso, vamos precisar criar um componente que corresponda com o padrão indicado e também a URL em App.jsx
+Na nested route teremos o acesso ao parâmetro da URL também.
+
 
 ### Testes na aplicação - Jest e Cypress
 Jest e Cypress são ferramentas usadas para diferentes tipos de testes no ecossistema JavaScript/React.
