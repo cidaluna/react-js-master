@@ -500,7 +500,7 @@ Para criar links para as páginas vamos precisar utilizar o Link do React Router
 #### Rota dinâmica
 Para criar uma rota dinâmica vamos precisar definir uma nova Route em App.jsx.
 Deve ter o padrão de: `/products/:id `
-Onde :id é o dado dinâmico, ou seja, podemos ter qualquer valor.
+Onde `:id` é o dado dinâmico, ou seja, podemos ter qualquer valor.
 Na página podemos utilizar o hook useParams para resgatar esta informação.
 
 #### Nested route
@@ -508,15 +508,21 @@ As nested routes indicam URLs mais complexas, como: `/products/:id/something`
 Neste caso, vamos precisar criar um componente que corresponda com o padrão indicado e também a URL em App.jsx. Na nested route teremos o acesso ao parâmetro da URL também.
 
 #### No match route (404)
-Podemos criar uma página não encontrada (404) facilmente com o React Router. Basta criarmos o componente da página e no arquivo App.jsx definir um path como *
+Podemos criar uma página não encontrada (404) facilmente com o React Router. Basta criarmos o componente da página e no arquivo App.jsx definir um path como `*`.
+
 Desta maneira, qualquer rota que nao exista cairá neste componente.
 
 #### Link ativo
-Para ter fácil acesso a uma modificação para os links ativos na barra de navegação, vamos trocar o Link pelo NavLink. Neste elemento temos acesso a um valor chamado isActive, ou seja, podemos ativar uma classe se a rota atual for a que está no atributo to.
+Para ter fácil acesso a uma modificação para os links ativos na barra de navegação, vamos trocar o Link pelo NavLink. Neste elemento temos acesso a um valor chamado isActive, ou seja, podemos ativar uma classe se a rota atual for a que está no atributo `to`.
 
 #### Search params
 É um recurso que permite obter o que vem na URL em forma de parâmetro. Exemplo: `products?q=camisa`.
 Utilizamos o hook useSearchParams para obtê-los. Com este recurso fica simples fazer uma funcionalidade de busca no sistema. 
+
+#### Redirect
+Podemos precisar de um redirecionamento de páginas eventualmente. Exemplo: uma página antiga do sistema responde agora a uma nova URL.
+
+Para isso vamos utilizar a rota com Route normalmente, mas em element vamos utilizar o componente Navigate com um `to` que vai para a rota correta.
 
 
 ### Testes na aplicação - Jest e Cypress
