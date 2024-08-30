@@ -524,6 +524,17 @@ Podemos precisar de um redirecionamento de páginas eventualmente. Exemplo: uma 
 
 Para isso vamos utilizar a rota com Route normalmente, mas em element vamos utilizar o componente Navigate com um `to` que vai para a rota correta.
 
+#### Context API
+Um recurso que facilita o compartilhamento de um estado entre componentes, ou seja, quando precisamos de dados "globais", provavelmente precisamos utilizar o Context.
+
+O Context precisa encapsular os componentes que receberão seus valores, geralmente colocamos no App.jsx. Os contextos costumam ficar na pasta context.
+
+### Desafio 8
+1. Crie um novo projeto para trabalharmos com context
+2. Este projeto deve ser instalado o react router
+3. Crie três páginas
+4. Faça uma navbar e coloque o link para as três.
+
 
 ### Testes na aplicação - Jest e Cypress
 Jest e Cypress são ferramentas usadas para diferentes tipos de testes no ecossistema JavaScript/React.
