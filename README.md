@@ -20,6 +20,7 @@ O npm é um gerenciador de pacotes do Node, que permite baixar bibliotecas de te
 6. **[Secret Word Game](#6-secret-word-game)**
 7. **[Requisicoes HTTP no React](#7-requisicoes-http-no-react)**
 8. **[React Router](#8-react-router)**
+9. **[Context](#9-context)**
 
 
 
@@ -491,6 +492,7 @@ Precisamos instalar essa dependência no nosso projeto, a configuração e utili
 5. Crie um script para inicializar o json-server
 
 #### Configurando o React Router
+Comando de instalação `npm i react-router-dom` 
 Para configurar o React Router vamos ter que importar três elementos de react-router-dom:
 BrowserRouter - define onde a área do nosso app que vai trocar as páginas;
 Routes - define as rotas;
@@ -524,10 +526,6 @@ Podemos precisar de um redirecionamento de páginas eventualmente. Exemplo: uma 
 
 Para isso vamos utilizar a rota com Route normalmente, mas em element vamos utilizar o componente Navigate com um `to` que vai para a rota correta.
 
-#### Context API
-Um recurso que facilita o compartilhamento de um estado entre componentes, ou seja, quando precisamos de dados "globais", provavelmente precisamos utilizar o Context.
-
-O Context precisa encapsular os componentes que receberão seus valores, geralmente colocamos no App.jsx. Os contextos costumam ficar na pasta context.
 
 ### Desafio 8
 1. Crie um novo projeto para trabalharmos com context
@@ -535,7 +533,30 @@ O Context precisa encapsular os componentes que receberão seus valores, geralme
 3. Crie três páginas
 4. Faça uma navbar e coloque o link para as três.
 
+**[⬆ Back to Top](#table-of-contents)**
 
+---
+
+## 9. Context
+
+#### Context API
+Um recurso que facilita o compartilhamento de um estado entre componentes, ou seja, quando precisamos de dados "globais", provavelmente precisamos utilizar o Context.
+
+O Context precisa encapsular os componentes que receberão seus valores, geralmente colocamos no App.jsx. Os contextos costumam ficar na pasta context.
+
+#### Criando o contexto
+Criamos o arquivo context sempre com a primeira letra maiúscula, exemplo: `SomethingContext.jsx`, a convenção é deixar na pasta context em src. E onde utilizarmos o valor do contexto, o arquivo precisa ser importado.
+
+#### Criando o provider
+O provider vai delimitar onde o contexto é utilizado. Vamos criar uma espécie de componente com a prop children. E, este provider deve encapsular os demais componentes em que precisamos consultar ou alterar o valor.
+Geralmente, ele fica em App.jsx ou em index.
+Agora, podemos compartilhar o valor do contexto em todos os componentes.
+
+
+
+**[⬆ Back to Top](#table-of-contents)**
+
+---
 ### Testes na aplicação - Jest e Cypress
 Jest e Cypress são ferramentas usadas para diferentes tipos de testes no ecossistema JavaScript/React.
 
