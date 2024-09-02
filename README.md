@@ -21,6 +21,7 @@ O npm é um gerenciador de pacotes do Node, que permite baixar bibliotecas de te
 7. **[Requisicoes HTTP no React](#7-requisicoes-http-no-react)**
 8. **[React Router](#8-react-router)**
 9. **[Context](#9-context)**
+10. **[Mini Blog](#10-mini-blog)**
 
 
 
@@ -569,10 +570,24 @@ No reducer teremos diferentes ações com um switch. E, na aplicação, vamos co
 #### Alterando o contexto complexo
 Para alterar o contexto vamos utilizar uma função chamada `dispatch`. Ela estará mo reducer também. E, deve conter todas as informações necessárias para alteração do valor do contexto. Ou seja, o switch entra em ação e retorna um novo contexto.
 
-
 **[⬆ Back to Top](#table-of-contents)**
 
 ---
+
+## 10. Mini Blog
+
+#### Setup Firebase
+Logar com seu email gmail no site do console firebase e criar um novo projeto chamado miniblog.
+Acesse a opção `Web` e clique em `Registrar app`. Clique em `Usar tag script` e em `Continuar no console`.
+Vamos em autenticação, métodos de login, vamos ativar e salvar apenas a opção email e senha.
+
+#### Criando o projeto com vite
+Crie com o vite `npm create vite@latest` um novo projeto para esta unidade chamado miniblog, com React e JS.
+Entre no projeto e instale o firebase `npm i firebase`.
+
+
+
+
 ### Testes na aplicação - Jest e Cypress
 Jest e Cypress são ferramentas usadas para diferentes tipos de testes no ecossistema JavaScript/React.
 
