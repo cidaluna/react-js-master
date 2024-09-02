@@ -552,6 +552,8 @@ O provider vai delimitar onde o contexto é utilizado. Vamos criar uma espécie 
 Geralmente, ele fica em App.jsx ou em index.
 Agora, podemos compartilhar o valor do contexto em todos os componentes.
 
+#### Alterando o contexto
+Para alterar o valor do contexto precisamos criar um componente que utilize a função da mudança de contexto. Esta mudança ocorrerá no Context e poderá ser consumida por todos os componentes que recebem o contexto. E assim, finalizamos o ciclo de Context API.
 
 
 **[⬆ Back to Top](#table-of-contents)**
