@@ -585,6 +585,9 @@ Vamos em autenticação, métodos de login, vamos ativar e salvar apenas a opç�
 Crie com o vite `npm create vite@latest` um novo projeto para esta unidade chamado miniblog, com React e JS.
 Entre no projeto e instale o firebase `npm i firebase`.
 
+Neste mini blog será aplicado autenticação de usuário, e após logar o mesmo poderá inserir posts com imagens, descrição e tags, ao mesmo tempo, poderá aplicar as operação de CRUD, ou seja, criar, ler, atualizar e excluir posts.
+
+
 
 
 
