@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, updateProfile } from 'firebase/auth';
 import { useEffect, useState } from 'react';
 import { auth } from '../firebase/config';
 
@@ -55,6 +55,35 @@ const useAuthentication = () => {
         }
     };
 
+    // logout - sign out
+    const logout = () => {
+        checkIfIsCancelled(); // memory leak
+        signOut(auth);
+    }
+
+    // login - sign in
+    const login = async(data) => {
+        checkIfIsCancelled(); 
+        setLoading(true);
+        setError(false);
+
+        try{
+            await signInWithEmailAndPassword(auth, data.email, data.password);
+            setLoading(false);
+        }catch(error){
+        console.log("Erro recebido:", error.message);
+        let systemErrorMessage;
+            if(error.message.includes("invalid-credential")){
+                systemErrorMessage = "Usuário ou senha incorreto(s)."
+            }else{
+                systemErrorMessage = "Ocorreu um erro. Tente novamente mais tarde."
+            }
+
+            setError(systemErrorMessage);
+            setLoading(false);
+        }
+    }
+
     // useEffect to set cancelled as true and avoid memory leak
     useEffect(() => {
         return () => setCancelled(true);
@@ -64,7 +93,9 @@ const useAuthentication = () => {
         auth,
         createUser,
         error,
-        loading
+        loading,
+        logout,
+        login,
     };
 };
 

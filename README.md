@@ -26,6 +26,7 @@ O npm é um gerenciador de pacotes do Node, que permite baixar bibliotecas de te
 8. **[React Router](#8-react-router)**
 9. **[Context](#9-context)**
 10. **[Mini Blog em React](#10-mini-blog-em-react)**
+21. **[Plus Testes com Jest e Cypress](#21-plus-testes-com-jest-e-cypress)**
 
 
 
@@ -593,9 +594,11 @@ O projeto mini blog react terá autenticação de usuário, e após logar o mesm
 
 
 
+**[⬆ Back to Top](#table-of-contents)**
 
+---
 
-### Testes na aplicação - Jest e Cypress
+## 21. Plus testes com Jest e Cypress
 Jest e Cypress são ferramentas usadas para diferentes tipos de testes no ecossistema JavaScript/React.
 
 ### Jest
