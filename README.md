@@ -25,7 +25,7 @@ O npm é um gerenciador de pacotes do Node, que permite baixar bibliotecas de te
 7. **[Requisicoes HTTP no React](#7-requisicoes-http-no-react)**
 8. **[React Router](#8-react-router)**
 9. **[Context](#9-context)**
-10. **[Mini Blog React](#10-mini-blog-react)**
+10. **[Mini Blog em React](#10-mini-blog-em-react)**
 
 
 
@@ -578,7 +578,7 @@ Para alterar o contexto vamos utilizar uma função chamada `dispatch`. Ela esta
 
 ---
 
-## 10. Mini Blog React
+## 10. Mini Blog em React
 
 #### Setup Firebase
 Logar com seu email gmail no site do console firebase e criar um novo projeto chamado miniblog.
