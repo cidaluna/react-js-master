@@ -31,7 +31,6 @@ function App() {
 
   return (
     <div className="App">
-      { console.log(user) }
       <AuthProvider value={{ user }}>
         <BrowserRouter>
           <Navbar />

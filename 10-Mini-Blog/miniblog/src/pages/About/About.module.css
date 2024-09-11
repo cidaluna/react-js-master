@@ -1,0 +1,17 @@
+.customAbout{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.customAbout p{
+    color: #859586;
+    margin-bottom: 2em;
+}
+
+.customAbout a{
+    display: block;
+    margin-top: 15px;
+    padding: 10px 15px;
+}
