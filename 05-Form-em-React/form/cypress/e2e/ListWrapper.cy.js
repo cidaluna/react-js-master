@@ -46,12 +46,12 @@ describe('ListWrapper Component', () => {
       cy.get('.myListCy').contains('sql', { matchCase: false }) // Bom para ignorar case sensitive em elementos específicos
     });
 
-    it('refacterd if exists SQL text', () => {
+    it('refactored if exists SQL text', () => {
       cy.get('li').contains('SQL').should('exist'); 
       cy.get('[data-cy="list-item"]').should('contain', 'SQL'); // Melhor opção é esta que usa data-cy
       cy.contains('SQL').should('exist');
       cy.contains('li', 'SQL').should('exist');
-      cy.get('.myListCy').should('contain.text', 'sql');
+      cy.get('.myListCy').should('contain.text', 'SQL');
     });
 
     it('click on a specific element', () => {
