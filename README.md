@@ -1,6 +1,10 @@
-# React
+# Curso React JS
 
 React é uma biblioteca Javascript para desenvolvimento de aplicações SPA(Single Page Application) Front-end que utiliza uma arquitetura baseada em componentes.
+
+Neste repositório serão armazenados os códigos desenvolvidos no curso de React JS do Zero a Maestria do instrutor Matheus Battisti do Hora de Codar, na plataforma Udemy.
+
+Tópicos que serão apresentados ao longo do curso: Introdução ao React; Fundamentos do React; JSX; Componentização; CSS com React (CSS modules, CSS global); Formulários com React (validações, Hooks, API); Gerenciamento de estado; Tratamento de dados com servidor; Projeto Secret Word, Requisições HTTP com React (useState, useEffect, useRef, useReducer); React Router; Context API; Projeto Mini Blog em React; Node.js; Express; MongoDB; Mongoose; Redux; Firebase (solução do Google para autenticação de usuário, serviços de API e Banco de Dados); Proejto ReactGram; Javascript Moderno; Typescript com React.
 
 O Node.js é uma runtime de Javascript, ou seja, uma biblioteca utilizada por um compilador durante a execução do programa. Construida na V8 engine (escrita em C++ com alta performance) do Google e possibilita criar softwares em JS no lado do servidor.
 
@@ -21,7 +25,7 @@ O npm é um gerenciador de pacotes do Node, que permite baixar bibliotecas de te
 7. **[Requisicoes HTTP no React](#7-requisicoes-http-no-react)**
 8. **[React Router](#8-react-router)**
 9. **[Context](#9-context)**
-10. **[Mini Blog](#10-mini-blog)**
+10. **[Mini Blog React](#10-mini-blog-react)**
 
 
 
@@ -574,18 +578,18 @@ Para alterar o contexto vamos utilizar uma função chamada `dispatch`. Ela esta
 
 ---
 
-## 10. Mini Blog
+## 10. Mini Blog React
 
 #### Setup Firebase
 Logar com seu email gmail no site do console firebase e criar um novo projeto chamado miniblog.
 Acesse a opção `Web` e clique em `Registrar app`. Clique em `Usar tag script` e em `Continuar no console`.
 Vamos em autenticação, métodos de login, vamos ativar e salvar apenas a opção email e senha.
 
-#### Criando o projeto com vite
+#### Criando o projeto mini blog em React com vite
 Crie com o vite `npm create vite@latest` um novo projeto para esta unidade chamado miniblog, com React e JS.
 Entre no projeto e instale o firebase `npm i firebase`.
 
-Neste mini blog será aplicado autenticação de usuário, e após logar o mesmo poderá inserir posts com imagens, descrição e tags, ao mesmo tempo, poderá aplicar as operações de CRUD, ou seja, criar, ler, atualizar e excluir posts.
+O projeto mini blog react terá autenticação de usuário, e após logar o mesmo poderá inserir posts com imagens, descrição e tags, ao mesmo tempo, poderá aplicar as operações de CRUD, ou seja, criar, ler, atualizar e excluir posts.
 
 
 
