@@ -1,3 +1,9 @@
 .myPost{
+    text-align: center;
     color: green;
+}
+
+.myPost p{
+    color: #aaa;
+    margin-bottom: 2em;
 }
