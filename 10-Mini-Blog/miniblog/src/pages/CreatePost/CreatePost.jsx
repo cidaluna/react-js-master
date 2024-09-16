@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useAuthValue } from '../../contexts/AuthContext';
 import { useInsertDocument } from '../../hooks/useInsertDocument';
 import styles from './CreatePost.module.css';
@@ -14,22 +15,37 @@ const CreatePost = () => {
   const { user } = useAuthValue();
   const { insertDocument, response} = useInsertDocument("posts"); // passando o nome da colection do banco
 
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormError(""); // zerar erros do formulário
+
     // validar a url da imagem
+    try{
+      new URL(image);
+    }catch(error){
+      setFormError("A imagem precisa ser uma URL.");
+    }
 
     // criar o array de tags
+    const tagsArray = tags.split(",").map((tag) => tag.trim().toLowerCase());
 
     //checar todos os valores
+    if(!title || !image || !tags || !body){
+      setFormError("Por favor, preencha todos os campos!");
+    }
+
+    if(formError) return;
 
     insertDocument({
-      title, image, body, tags,
+      title, image, body, tagsArray,
       uid: user.uid,
       createdBy: user.displayName
     });
 
     // redirect to home page
+    navigate("/");
 
   };
   
@@ -73,6 +89,7 @@ const CreatePost = () => {
         {!response.loading && <button className="btn">Cadastrar</button>}
         {response.loading && <button className="btn" disabled>Aguarde...</button>}
         {response.error && <p className="error">{response.error}</p>}
+        {formError && <p className="error">{formError}</p>}
         
       </form>
     </div>
