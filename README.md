@@ -600,6 +600,12 @@ Imagem da tela atual do projeto Mini Blog em React.JS
 ![React Mini Blog](./images/React-MiniBlog-Screenshot.PNG)
 
 
+### Screenshot do Console Firebase
+Imagem da tela atual do Console Firebase
+
+![Firebase Mini Blog](./images/React-MiniBlog-Firebase.PNG)
+
+
 **[⬆ Back to Top](#table-of-contents)**
 
 ---
