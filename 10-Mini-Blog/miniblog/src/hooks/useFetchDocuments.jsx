@@ -1,4 +1,4 @@
-import { collection, onSnapshot, orderBy, query } from 'firebase/firestore';
+import { collection, onSnapshot, orderBy, query, where } from 'firebase/firestore';
 import { useEffect, useState } from "react";
 import { db } from '../firebase/config';
 
@@ -17,10 +17,11 @@ export const useFetchDocuments = (docCollection, search = null, uid = null) => {
             try{
                 let q;
                 //busca
-                //dashboard
-
-                // extracao de dados
-                q = await query(collectionReferencia, orderBy("createdAt", "desc"));
+                if(search){
+                    q = await query(collectionReferencia, where("tagsArray", "array-contains", search), orderBy("createdAt", "desc"));
+                }else{
+                    q = await query(collectionReferencia, orderBy("createdAt", "desc"));
+                }
 
                 await onSnapshot(q, (querySnapshot) => {
                     // recebe um doc e cria um doc
