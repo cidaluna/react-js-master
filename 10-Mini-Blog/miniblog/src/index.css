@@ -109,6 +109,19 @@ input, textarea {
     background-color: #dc3545;
 }
 
+.btn.btn-outline-ler{
+    background-color: #000;
+    border-radius: 0;
+    color: #FFF;
+    border: 1px solid #000;
+    padding: 7px 30px;
+}
+
+.btn.btn-outline-ler:hover{
+    background-color: #fff;
+    color: #000;
+}
+
 button[disabled]{
     background-color: #aaa;
 }
