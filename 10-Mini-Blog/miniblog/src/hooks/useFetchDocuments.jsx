@@ -19,6 +19,8 @@ export const useFetchDocuments = (docCollection, search = null, uid = null) => {
                 //busca
                 if(search){
                     q = await query(collectionReferencia, where("tagsArray", "array-contains", search), orderBy("createdAt", "desc"));
+                }else if(uid){
+                    q = await query(collectionReferencia, where("uid", "==", uid), orderBy("createdAt", "desc"));
                 }else{
                     q = await query(collectionReferencia, orderBy("createdAt", "desc"));
                 }
@@ -41,7 +43,7 @@ export const useFetchDocuments = (docCollection, search = null, uid = null) => {
             }
         }
         loadData();  // executing the function
-    }, [docCollection, documents, search, uid, cancelled]); // dados que serão mapeados
+    }, [docCollection, search, uid, cancelled]); // dados que serão mapeados
 
     // cleaning memmory
     useEffect(()=> {
