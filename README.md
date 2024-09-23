@@ -581,17 +581,23 @@ Para alterar o contexto vamos utilizar uma função chamada `dispatch`. Ela esta
 
 ## 10. Mini Blog em React
 
-#### Setup Firebase
-Logar com seu email gmail no site do console firebase e criar um novo projeto chamado miniblog.
+Um dos principais projetos deste curso, é o  Mini Blog. Desenvolvido com React, Autenticação Firebase / Firestore e JavaScript. 
+
+#### Setup Console Firebase
+Utilizado o Gmail para configurar o ambiente Console Firebase ao projeto chamado miniblog.
 Acesse a opção `Web` e clique em `Registrar app`. Clique em `Usar tag script` e em `Continuar no console`.
-Vamos em autenticação, métodos de login, vamos ativar e salvar apenas a opção email e senha.
+Vamos em autenticação, métodos de login, vamos ativar e salvar apenas a opção de autenticação por email e senha.
 
 #### Criando o projeto mini blog em React com vite
 Crie com o vite `npm create vite@latest` um novo projeto para esta unidade chamado miniblog, com React e JS.
 Entre no projeto e instale o firebase `npm i firebase`.
 
-O projeto mini blog react terá autenticação de usuário, e após logar o mesmo poderá inserir posts com imagens, descrição e tags, ao mesmo tempo, poderá aplicar as operações de CRUD, ou seja, criar, ler, atualizar e excluir posts.
+Após a autenticação do usuário via Firebase, o usuário poderá inserir posts com imagens, descrição e tags, ao mesmo tempo, poderá aplicar as operações de CRUD, ou seja, criar, ler, atualizar e excluir posts.
 
+### Screenshot da aplicação Web Mini Blog React
+Imagem da tela atual do projeto Mini Blog em React.JS
+
+![React Mini Blog](./images/React-MiniBlog-Screenshot.PNG)
 
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -600,6 +606,7 @@ O projeto mini blog react terá autenticação de usuário, e após logar o mesm
 
 ## 21. Plus testes com Jest e Cypress
 Jest e Cypress são ferramentas usadas para diferentes tipos de testes no ecossistema JavaScript/React.
+Acompanhe alguns testes desenvolvidos com Cypress nas seções 03 e 05 deste projeto React.
 
 ### Jest
 

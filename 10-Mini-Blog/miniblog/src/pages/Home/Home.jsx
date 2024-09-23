@@ -1,3 +1,4 @@
+import PostDetail from '../../components/PostDetail';
 import { useFetchDocuments } from '../../hooks/useFetchDocuments';
 import styles from './Home.module.css';
 
@@ -23,8 +24,9 @@ const Home = () => {
         <h1>Posts...</h1>
         {loading && <p>Carregando... </p>}
         {posts && posts.map((post) => (
-          <h3 key={post.id}>{post.title}</h3>
-        ))}
+          <PostDetail key={post.id} post={post} />
+        ))
+        }
         {posts && posts.length === 0 && (
           <div className={styles.noposts}>
             <p>Não foram encontrados posts</p>
@@ -33,7 +35,7 @@ const Home = () => {
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
