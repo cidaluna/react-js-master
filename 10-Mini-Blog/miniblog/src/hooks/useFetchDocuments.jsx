@@ -41,7 +41,7 @@ export const useFetchDocuments = (docCollection, search = null, uid = null) => {
             }
         }
         loadData();  // executing the function
-    }, [docCollection, search, uid, cancelled]); // dados que serão mapeados
+    }, [docCollection, documents, search, uid, cancelled]); // dados que serão mapeados
 
     // cleaning memmory
     useEffect(()=> {
