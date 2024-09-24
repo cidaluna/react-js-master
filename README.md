@@ -594,11 +594,20 @@ Entre no projeto e instale o firebase `npm i firebase`.
 
 Após a autenticação do usuário via Firebase, o usuário poderá inserir posts com imagens, descrição e tags, ao mesmo tempo, poderá aplicar as operações de CRUD, ou seja, criar, ler, atualizar e excluir posts.
 
-### Screenshot da aplicação Web Mini Blog React
-Imagem da tela atual do projeto Mini Blog em React.JS
+### Screenshot da tela Home - Mini Blog React
+Imagem da tela Home do projeto Mini Blog em React.JS, onde são carregados todos os posts de diferentes usuários.
 
 ![React Mini Blog](./images/React-MiniBlog-Screenshot.PNG)
 
+### Screenshot da tela Dashboard - Mini Blog React
+Imagem da tela Dashboard do projeto Mini Blog em React.JS, onde é apresentado uma listagem com os títulos de cada post e as ações de ver, editar ou excluir o post.
+
+![Dashboard Mini Blog](./images/React-MiniBlog-Dashboard.PNG)
+
+### Screenshot da tela Editar - Mini Blog React
+Imagem da tela Editar do projeto Mini Blog em React.JS, onde é carregado os dados do post escolhido para ser editado em um ou mais campos.
+
+![Dashboard Mini Blog](./images/React-MiniBlog-Editar.PNG)
 
 ### Screenshot do Console Firebase
 Imagem da tela atual do Console Firebase
