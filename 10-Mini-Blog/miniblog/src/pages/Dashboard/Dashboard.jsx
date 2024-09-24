@@ -11,6 +11,12 @@ const Dashboard = () => {
 
   // posts do usuario
 
+  const deleteDocument = (id) => {};
+
+  if(loading){
+    return <p>Carregando..</p>;
+  }
+
   return (
     <div className={styles.dashboard}>
       <h2>Dashboard</h2>
@@ -23,15 +29,33 @@ const Dashboard = () => {
           </Link>
         </div>
       ) : (
-        <div><p>Tem posts!</p></div>
+        <>
+          <div className={styles.post_header}>
+            <span>Título</span>
+            <span>Ações</span>
+          </div>
+
+          {posts && posts.map((post) => 
+              <div key={post.id} className={styles.post_row}>
+                <p>{post.title}</p>
+                <div>
+                  <Link to={`/posts/${post.id}`} className='btn btn-outline'>
+                  Ver
+                  </Link>
+                  <Link to={`/posts/edit/${post.id}`} className='btn btn-outline'>
+                  Editar
+                  </Link>
+                  <button onClick={() => deleteDocument(id)} className='btn btn-outline btn-danger'>
+                    Excluir
+                  </button>
+                </div>
+              </div>
+          )}
+          
+        </>
       )}
-
-
-      {posts && posts.map((post) => (
-        <h3 key={post.id}>{post.title}</h3>
-      ))}
     </div>
-  )
+  );
 }
 
 export default Dashboard
