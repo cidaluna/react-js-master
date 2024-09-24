@@ -604,6 +604,11 @@ Imagem da tela Dashboard do projeto Mini Blog em React.JS, onde é apresentado u
 
 ![Dashboard Mini Blog](./images/React-MiniBlog-Dashboard.PNG)
 
+### Screenshot da tela Post - Mini Blog React
+Imagem da tela Post do projeto Mini Blog em React.JS, onde é carregado o post escolhido para ver todas as informações disponíveis.
+
+![Dashboard Mini Blog](./images/React-MiniBlog-Post.PNG)
+
 ### Screenshot da tela Editar - Mini Blog React
 Imagem da tela Editar do projeto Mini Blog em React.JS, onde é carregado os dados do post escolhido para ser editado em um ou mais campos.
 
